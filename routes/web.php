@@ -1,5 +1,7 @@
 <?php
 
+Route::get('/novo', function (){return view('vue.user.layouts.app');});
+
 /* ##### ROTAS DEFAULT ###### */
     Route::get('/logout','Auth\LoginController@logout')->name('logout');    
     Route::any('/abrirconta','Auth\RegisterController@create')->name('abrirconta');    

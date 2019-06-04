@@ -19,6 +19,7 @@ mix.scripts([
 
 ],'js/all.js')
 
+
 .styles([
     'resources/assets/css/bootstrap.css',   
     'resources/assets/css/adminlte.css', 
@@ -29,3 +30,6 @@ mix.scripts([
     
 ], 'css/all.css');
     
+
+
+mix.js('resources/assets/js/vue/users/main.js', 'public/js');
