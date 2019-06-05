@@ -13,12 +13,8 @@
             </span> -->
         <div id="navbarNavDropdown" class="navbar-collapse collapse">
             <ul class="navbar-nav mr-auto">
-            </ul>
-
-           
-               
-            <ul class="navbar-nav">
-                 
+            </ul>              
+            <ul class="navbar-nav">                 
                 <li class="nav-item">
                     <a class="nav-link" href="">HOME</a>
                 </li>
@@ -41,6 +37,9 @@ export default {
 <style>
 .row-space-header {
     margin-top: 20px;
+}
+body{
+    background-color:#FF4C03
 }
 
 </style>
