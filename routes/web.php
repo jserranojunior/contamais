@@ -1,12 +1,14 @@
 <?php
 
+Route::get('/', function () {return view('inicioimagem');});
+
 Route::get('/novo', function (){return view('vue.user.layouts.app');});
 
 /* ##### ROTAS DEFAULT ###### */
     Route::get('/logout','Auth\LoginController@logout')->name('logout');    
     Route::any('/abrirconta','Auth\RegisterController@create')->name('abrirconta');    
     Route::get('/inicio', function () {return view('inicio');});
-    Route::get('/', function () {return view('inicio');});
+    // Route::get('/', function () {return view('inicio');});
 /* ##### FIM ROTAS DEFAULT ###### */
 
 /* ##### ROTAS DE AUTH ###### */
