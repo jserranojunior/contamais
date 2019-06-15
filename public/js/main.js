@@ -14748,7 +14748,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.card {\n    background-color: #FF4C03;\n    border: 1px solid #f8f9fa;\n    color: white;\n}\n.btn-inicial-func {\n    padding: 15px\n}\n.btn-inicial-mini {\n    width: 100%;\n    margin-bottom: 2px;\n}\n", ""]);
+exports.push([module.i, "\n.card {\n    background-color: #FF4C03;\n    border: 1px solid #f8f9fa;\n    color: white;\n}\n.btn-inicial-func {\n    padding: 15px;\n    margin-bottom:3px;\n}\n.btn-inicial-mini {\n    width: 100%;\n    margin-bottom: 2px;\n}\n@media (min-width: 260px) and (max-width: 400px) {\n.text-btn-func{\n        font-size: 0.6rem;\n    font-weight: bold;\n}\n}\n", ""]);
 
 // exports
 
@@ -14909,6 +14909,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "Home",
@@ -14927,7 +14929,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { staticClass: "container" }, [
     _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "row row-space" }, [
@@ -14942,7 +14944,7 @@ var render = function() {
           }
         },
         [
-          _vm._v("\n            MOSTRAR SALDO "),
+          _vm._v("\n             MOSTRAR SALDO "),
           _c("br"),
           _vm._v(" "),
           _vm.mostrarSaldo ? _c("p", [_vm._v("R$0,00")]) : _vm._e(),
@@ -15020,7 +15022,10 @@ var staticRenderFns = [
           },
           [
             _c("h4", [_c("i", { staticClass: "fas fa-money-bill-alt" })]),
-            _vm._v("\n                Saldo\n            ")
+            _vm._v(" "),
+            _c("span", { staticClass: " text-btn-func text-center" }, [
+              _vm._v("Saldo")
+            ])
           ]
         )
       ]),
@@ -15034,7 +15039,10 @@ var staticRenderFns = [
           },
           [
             _c("h4", [_c("i", { staticClass: "fas fa-qrcode" })]),
-            _vm._v("\n                Extrato    \n            ")
+            _vm._v(" "),
+            _c("span", { staticClass: " text-btn-func text-center" }, [
+              _vm._v("Extrato")
+            ])
           ]
         )
       ]),
@@ -15048,7 +15056,10 @@ var staticRenderFns = [
           },
           [
             _c("h4", [_c("i", { staticClass: "fas fa-exchange-alt" })]),
-            _vm._v("\n                Transferência\n            ")
+            _vm._v(" "),
+            _c("span", { staticClass: " text-btn-func text-center" }, [
+              _vm._v("Transferência")
+            ])
           ]
         )
       ])
@@ -15068,7 +15079,7 @@ var staticRenderFns = [
           },
           [
             _c("h4", [_c("i", { staticClass: "fas fa-donate" })]),
-            _vm._v("\n                Deposito\n            ")
+            _vm._v("\n                 Deposito\n             ")
           ]
         )
       ]),
@@ -15082,7 +15093,7 @@ var staticRenderFns = [
           },
           [
             _c("h4", [_c("i", { staticClass: "far fa-credit-card" })]),
-            _vm._v("\n                Saque    \n            ")
+            _vm._v("\n                 Saque    \n             ")
           ]
         )
       ]),
@@ -15096,7 +15107,7 @@ var staticRenderFns = [
           },
           [
             _c("h4", [_c("i", { staticClass: "fas fa-chart-line" })]),
-            _vm._v("\n                Smart Invest\n            ")
+            _vm._v("\n                 Smart Invest\n             ")
           ]
         )
       ])
@@ -15116,9 +15127,9 @@ var staticRenderFns = [
           },
           [
             _c("h4", [_c("i", { staticClass: "fas fa-donate" })]),
-            _vm._v("\n                Envio"),
+            _vm._v("\n                 Envio"),
             _c("br"),
-            _vm._v("\n                (Câmbio)\n            ")
+            _vm._v("\n                 (Câmbio)\n             ")
           ]
         )
       ]),
@@ -15132,9 +15143,9 @@ var staticRenderFns = [
           },
           [
             _c("h4", [_c("i", { staticClass: "fas fa-history" })]),
-            _vm._v("\n                Apoio"),
+            _vm._v("\n                 Apoio"),
             _c("br"),
-            _vm._v("\n                Contabio Mei    \n            ")
+            _vm._v("\n                 Contabio Mei    \n             ")
           ]
         )
       ]),
@@ -15148,7 +15159,7 @@ var staticRenderFns = [
           },
           [
             _c("h4", [_c("i", { staticClass: "fas fa-bold" })]),
-            _vm._v("\n                BPP"),
+            _vm._v("\n                 BPP"),
             _c("br"),
             _c("br")
           ]

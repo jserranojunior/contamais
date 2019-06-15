@@ -18,14 +18,14 @@
 
 
         <div class="appvue" id="appvue">
-        <div class="container-fluid">
+      
             
 
             
             <app></app>
 
 
-        </div>           
+                 
      
         </div>
 

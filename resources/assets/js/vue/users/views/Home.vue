@@ -1,5 +1,6 @@
 <template>
-    <div>
+   <div class="container">
+
         <div class="row row-space justify-content-sm-center">
             <div class="col-sm-12">
                 <p class=" text-center text-white">Ola, nome da pessoa</p>
@@ -32,7 +33,7 @@
                     <h4>
                         <i class="fas fa-money-bill-alt"></i>
                     </h4>
-                    Saldo
+                    <span class=" text-btn-func text-center">Saldo</span>
                 </div>    
             </div>
             <div class="col-4">
@@ -40,7 +41,7 @@
                     <h4>
                         <i class="fas fa-qrcode"></i>
                     </h4>
-                    Extrato    
+                    <span class=" text-btn-func text-center">Extrato</span>    
                 </div>
             </div>
             <div class="col-4">
@@ -48,7 +49,7 @@
                     <h4>
                         <i class="fas fa-exchange-alt"></i>
                     </h4>
-                    Transferência
+                    <span class=" text-btn-func text-center">Transferência</span>
                 </div>    
             </div>
         </div>
@@ -113,6 +114,7 @@
     
         </div>
     </div>
+
 </template>
 
 <script>
@@ -134,12 +136,20 @@ export default {
 }
 
 .btn-inicial-func {
-    padding: 15px
+    padding: 15px;
+    margin-bottom:3px;
 }
 
 .btn-inicial-mini {
     width: 100%;
     margin-bottom: 2px;
+}
+
+@media (min-width: 260px) and (max-width: 400px) {
+    .text-btn-func{
+        font-size: 0.6rem;
+    font-weight: bold;
+    }
 }
 </style>
 
