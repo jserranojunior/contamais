@@ -28,36 +28,37 @@
         </div>
     
         <section class="section-funcoes">
-            <div class="row">
-                <div class="col">
-                    <div class="card-deck">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title"><i class="fas fa-money-bill-alt"></i></h5>
-                            <p class="card-text">Saldo</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">
-                                <i class="fas fa-qrcode"></i>
-                            </h5>
-                            <p class="card-text">Extrato</p>
-                        </div>
-                    </div>
-    
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">
-                                <i class="fas fa-exchange-alt"></i>
-                            </h5>
-                            <p class=" text-btn-func text-center">Transferência</p>
-                        </div>
+
+<div class="row row-space">
+                <div class="col-4">
+                    <div class="btn-inicial-func border border-light text-center text-white">
+                        <h4>
+                            <i class="fas fa-money-bill-alt"></i>
+                        </h4>
+                        <span class=" text-btn-func text-center"> Saldo</span><br>
+                       
                     </div>
                 </div>
+                <div class="col-4">
+                    <div class="btn-inicial-func border border-light text-center text-white">
+                        <h4>
+                              <i class="fas fa-qrcode"></i>
+                        </h4>
+                        <p class=" text-btn-func text-center">Extrato</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="btn-inicial-func border border-light text-center text-white">
+                        <h4>
+                            <i class="fas fa-exchange-alt"></i>
+                        </h4>
+                        <p class=" text-btn-func text-center">Transferência</p><br>
+                         <!-- <p class=" text-btn-func text-center">Transferência</p> -->
+                    </div>
                 </div>
             </div>
-        </section>
+
+
     
     
         <div class="row row-space">
@@ -102,8 +103,7 @@
                     <h4>
                         <i class="fas fa-history"></i>
                     </h4>
-                    <p class=" text-btn-func text-center">Apoio</p>
-                    <p class=" text-btn-func text-center">Contabio Mei </p>
+                    <p class=" text-btn-func text-center">Apoio <br>Contabio Mei </p>
                 </div>
             </div>
             <div class="col-4">
@@ -144,6 +144,7 @@ export default {
 .btn-inicial-func {
     padding: 15px;
     margin-bottom: 3px;
+        height: 100px;
 }
 
 .section-funcoes {
@@ -155,12 +156,30 @@ export default {
     margin-bottom: 2px;
 }
 
+.card-columns {  
+    column-count: 2;   
+}
+
 @media (min-width: 260px) and (max-width: 400px) {
     .text-btn-func {
         font-size: 0.6rem;
         font-weight: bold;
     }
+
+    .card-deck{
+        column-count: 4;
+    }
+
+/* .card-deck .card{
+    margin-left: 4px;
 }
+   
+    .card-deck {
+       flex-direction: row! important
+    } */
+}
+
+
 </style>
 
 

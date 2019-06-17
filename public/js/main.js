@@ -14748,7 +14748,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.card {\n    background-color: #FF4C03;\n    border: 1px solid #f8f9fa;\n    color: white;\n}\n.btn-inicial-func {\n    padding: 15px;\n    margin-bottom: 3px;\n}\n.section-funcoes {\n    margin-top: 15px;\n}\n.btn-inicial-mini {\n    width: 100%;\n    margin-bottom: 2px;\n}\n@media (min-width: 260px) and (max-width: 400px) {\n.text-btn-func {\n        font-size: 0.6rem;\n        font-weight: bold;\n}\n}\n", ""]);
+exports.push([module.i, "\n.card {\n    background-color: #FF4C03;\n    border: 1px solid #f8f9fa;\n    color: white;\n}\n.btn-inicial-func {\n    padding: 15px;\n    margin-bottom: 3px;\n        height: 100px;\n}\n.section-funcoes {\n    margin-top: 15px;\n}\n.btn-inicial-mini {\n    width: 100%;\n    margin-bottom: 2px;\n}\n.card-columns {  \n    column-count: 2;\n}\n@media (min-width: 260px) and (max-width: 400px) {\n.text-btn-func {\n        font-size: 0.6rem;\n        font-weight: bold;\n}\n.card-deck{\n        column-count: 4;\n}\n\n/* .card-deck .card{\n    margin-left: 4px;\n}\n   \n    .card-deck {\n       flex-direction: row! important\n    } */\n}\n\n\n", ""]);
 
 // exports
 
@@ -14950,7 +14950,7 @@ var render = function() {
           }
         },
         [
-          _vm._v("\n            MOSTRAR SALDO "),
+          _vm._v("\n                MOSTRAR SALDO "),
           _c("br"),
           _vm._v(" "),
           _vm.mostrarSaldo ? _c("p", [_vm._v("R$0,00")]) : _vm._e(),
@@ -14967,10 +14967,6 @@ var render = function() {
     ]),
     _vm._v(" "),
     _vm._m(2),
-    _vm._v(" "),
-    _vm._m(3),
-    _vm._v(" "),
-    _vm._m(4),
     _vm._v(" "),
     _c("div", { staticClass: "row row-space" })
   ])
@@ -15019,167 +15015,174 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("section", { staticClass: "section-funcoes" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col" }, [
-          _c("div", { staticClass: "card-deck" }, [
-            _c("div", { staticClass: "card" }, [
-              _c("div", { staticClass: "card-body text-center" }, [
-                _c("h5", { staticClass: "card-title" }, [
-                  _c("i", { staticClass: "fas fa-money-bill-alt" })
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "card-text" }, [_vm._v("Saldo")])
+      _c("div", { staticClass: "row row-space" }, [
+        _c("div", { staticClass: "col-4" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "btn-inicial-func border border-light text-center text-white"
+            },
+            [
+              _c("h4", [_c("i", { staticClass: "fas fa-money-bill-alt" })]),
+              _vm._v(" "),
+              _c("span", { staticClass: " text-btn-func text-center" }, [
+                _vm._v(" Saldo")
+              ]),
+              _c("br")
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-4" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "btn-inicial-func border border-light text-center text-white"
+            },
+            [
+              _c("h4", [_c("i", { staticClass: "fas fa-qrcode" })]),
+              _vm._v(" "),
+              _c("p", { staticClass: " text-btn-func text-center" }, [
+                _vm._v("Extrato")
               ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card" }, [
-              _c("div", { staticClass: "card-body text-center" }, [
-                _c("h5", { staticClass: "card-title" }, [
-                  _c("i", { staticClass: "fas fa-qrcode" })
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "card-text" }, [_vm._v("Extrato")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card" }, [
-              _c("div", { staticClass: "card-body text-center" }, [
-                _c("h5", { staticClass: "card-title" }, [
-                  _c("i", { staticClass: "fas fa-exchange-alt" })
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: " text-btn-func text-center" }, [
-                  _vm._v("Transferência")
-                ])
-              ])
-            ])
-          ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-4" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "btn-inicial-func border border-light text-center text-white"
+            },
+            [
+              _c("h4", [_c("i", { staticClass: "fas fa-exchange-alt" })]),
+              _vm._v(" "),
+              _c("p", { staticClass: " text-btn-func text-center" }, [
+                _vm._v("Transferência")
+              ]),
+              _c("br")
+            ]
+          )
         ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row row-space" }, [
-      _c("div", { staticClass: "col-4" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "btn-inicial-func border border-light text-center text-white"
-          },
-          [
-            _c("h4", [_c("i", { staticClass: "fas fa-donate" })]),
-            _vm._v(" "),
-            _c("p", { staticClass: " text-btn-func text-center" }, [
-              _vm._v(" Deposito ")
-            ])
-          ]
-        )
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-4" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "btn-inicial-func border border-light text-center text-white"
-          },
-          [
-            _c("h4", [_c("i", { staticClass: "far fa-credit-card" })]),
-            _vm._v(" "),
-            _c("p", { staticClass: " text-btn-func text-center" }, [
-              _vm._v(" Saque ")
-            ])
-          ]
-        )
+      _c("div", { staticClass: "row row-space" }, [
+        _c("div", { staticClass: "col-4" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "btn-inicial-func border border-light text-center text-white"
+            },
+            [
+              _c("h4", [_c("i", { staticClass: "fas fa-donate" })]),
+              _vm._v(" "),
+              _c("p", { staticClass: " text-btn-func text-center" }, [
+                _vm._v(" Deposito ")
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-4" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "btn-inicial-func border border-light text-center text-white"
+            },
+            [
+              _c("h4", [_c("i", { staticClass: "far fa-credit-card" })]),
+              _vm._v(" "),
+              _c("p", { staticClass: " text-btn-func text-center" }, [
+                _vm._v(" Saque ")
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-4" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "btn-inicial-func border border-light text-center text-white"
+            },
+            [
+              _c("h4", [_c("i", { staticClass: "fas fa-chart-line" })]),
+              _vm._v(" "),
+              _c("p", { staticClass: " text-btn-func text-center" }, [
+                _vm._v(" Smart Invest ")
+              ])
+            ]
+          )
+        ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-4" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "btn-inicial-func border border-light text-center text-white"
-          },
-          [
-            _c("h4", [_c("i", { staticClass: "fas fa-chart-line" })]),
-            _vm._v(" "),
-            _c("p", { staticClass: " text-btn-func text-center" }, [
-              _vm._v(" Smart Invest ")
-            ])
-          ]
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row row-space" }, [
-      _c("div", { staticClass: "col-4" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "btn-inicial-func border border-light text-center text-white"
-          },
-          [
-            _c("h4", [_c("i", { staticClass: "fas fa-donate" })]),
-            _vm._v(" "),
-            _c("span", { staticClass: " text-btn-func text-center" }, [
-              _vm._v(" Envio")
-            ]),
-            _c("br"),
-            _vm._v(" "),
-            _c("p", { staticClass: " text-btn-func text-center" }, [
-              _vm._v("(Câmbio)")
-            ])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-4" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "btn-inicial-func border border-light text-center text-white"
-          },
-          [
-            _c("h4", [_c("i", { staticClass: "fas fa-history" })]),
-            _vm._v(" "),
-            _c("p", { staticClass: " text-btn-func text-center" }, [
-              _vm._v("Apoio")
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: " text-btn-func text-center" }, [
-              _vm._v("Contabio Mei ")
-            ])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-4" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "btn-inicial-func border border-light text-center text-white"
-          },
-          [
-            _c("h4", [_c("i", { staticClass: "fas fa-bold" })]),
-            _vm._v(" "),
-            _c("p", { staticClass: " text-btn-func text-center" }, [
-              _vm._v("BPP")
-            ]),
-            _c("br"),
-            _c("br")
-          ]
-        )
+      _c("div", { staticClass: "row row-space" }, [
+        _c("div", { staticClass: "col-4" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "btn-inicial-func border border-light text-center text-white"
+            },
+            [
+              _c("h4", [_c("i", { staticClass: "fas fa-donate" })]),
+              _vm._v(" "),
+              _c("span", { staticClass: " text-btn-func text-center" }, [
+                _vm._v(" Envio")
+              ]),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", { staticClass: " text-btn-func text-center" }, [
+                _vm._v("(Câmbio)")
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-4" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "btn-inicial-func border border-light text-center text-white"
+            },
+            [
+              _c("h4", [_c("i", { staticClass: "fas fa-history" })]),
+              _vm._v(" "),
+              _c("p", { staticClass: " text-btn-func text-center" }, [
+                _vm._v("Apoio "),
+                _c("br"),
+                _vm._v("Contabio Mei ")
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-4" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "btn-inicial-func border border-light text-center text-white"
+            },
+            [
+              _c("h4", [_c("i", { staticClass: "fas fa-bold" })]),
+              _vm._v(" "),
+              _c("p", { staticClass: " text-btn-func text-center" }, [
+                _vm._v("BPP")
+              ]),
+              _c("br"),
+              _c("br")
+            ]
+          )
+        ])
       ])
     ])
   }
