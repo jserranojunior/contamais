@@ -1,6 +1,6 @@
 <template>
-   <div class="container">
-
+    <div class="container">
+    
         <div class="row row-space justify-content-sm-center">
             <div class="col-sm-12">
                 <p class=" text-center text-white">Ola, nome da pessoa</p>
@@ -27,48 +27,54 @@
             </div>
         </div>
     
-        <div class="row row-space">
-            <div class="col-4">    
-                <div class="btn-inicial-func border border-light text-center text-white">
-                    <h4>
-                        <i class="fas fa-money-bill-alt"></i>
-                    </h4>
-                    <span class=" text-btn-func text-center">Saldo</span>
-                </div>    
-            </div>
-            <div class="col-4">
-                <div class="btn-inicial-func border border-light text-center text-white">
-                    <h4>
-                        <i class="fas fa-qrcode"></i>
-                    </h4>
-                    <span class=" text-btn-func text-center">Extrato</span>    
+        <section class="section-funcoes">
+            <div class="row">
+                <div class="col">
+                    <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><i class="fas fa-money-bill-alt"></i></h5>
+                            <p class="card-text">Saldo</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">
+                                <i class="fas fa-qrcode"></i>
+                            </h5>
+                            <p class="card-text">Extrato</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">
+                                <i class="fas fa-exchange-alt"></i>
+                            </h5>
+                            <p class=" text-btn-func text-center">Transferência</p>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="btn-inicial-func border border-light text-center text-white">
-                    <h4>
-                        <i class="fas fa-exchange-alt"></i>
-                    </h4>
-                    <span class=" text-btn-func text-center">Transferência</span>
-                </div>    
-            </div>
-        </div>
-
+        </section>
+    
+    
         <div class="row row-space">
-            <div class="col-4">    
+            <div class="col-4">
                 <div class="btn-inicial-func border border-light text-center text-white">
                     <h4>
                         <i class="fas fa-donate"></i>
                     </h4>
-                    Deposito
-                </div>    
+                    <p class=" text-btn-func text-center"> Deposito </p>
+                </div>
             </div>
             <div class="col-4">
                 <div class="btn-inicial-func border border-light text-center text-white">
                     <h4>
                         <i class="far fa-credit-card"></i>
                     </h4>
-                    Saque    
+                    <p class=" text-btn-func text-center"> Saque </p>
                 </div>
             </div>
             <div class="col-4">
@@ -76,28 +82,28 @@
                     <h4>
                         <i class="fas fa-chart-line"></i>
                     </h4>
-                    Smart Invest
-                </div>    
+                    <p class=" text-btn-func text-center"> Smart Invest </p>
+                </div>
             </div>
         </div>
-
-           <div class="row row-space">
-            <div class="col-4">    
+    
+        <div class="row row-space">
+            <div class="col-4">
                 <div class="btn-inicial-func border border-light text-center text-white">
                     <h4>
                         <i class="fas fa-donate"></i>
                     </h4>
-                    Envio<br>
-                    (Câmbio)
-                </div>    
+                    <span class=" text-btn-func text-center"> Envio</span><br>
+                    <p class=" text-btn-func text-center">(Câmbio)</p>
+                </div>
             </div>
             <div class="col-4">
                 <div class="btn-inicial-func border border-light text-center text-white">
                     <h4>
                         <i class="fas fa-history"></i>
                     </h4>
-                    Apoio<br>
-                    Contabio Mei    
+                    <p class=" text-btn-func text-center">Apoio</p>
+                    <p class=" text-btn-func text-center">Contabio Mei </p>
                 </div>
             </div>
             <div class="col-4">
@@ -105,16 +111,16 @@
                     <h4>
                         <i class="fas fa-bold"></i>
                     </h4>
-                    BPP<br><br>
-                </div>    
+                    <p class=" text-btn-func text-center">BPP</p><br><br>
+                </div>
             </div>
         </div>
-
+        </section>
+    
         <div class="row row-space">
     
         </div>
-    </div>
-
+        </div>
 </template>
 
 <script>
@@ -137,7 +143,11 @@ export default {
 
 .btn-inicial-func {
     padding: 15px;
-    margin-bottom:3px;
+    margin-bottom: 3px;
+}
+
+.section-funcoes {
+    margin-top: 15px;
 }
 
 .btn-inicial-mini {
@@ -146,9 +156,9 @@ export default {
 }
 
 @media (min-width: 260px) and (max-width: 400px) {
-    .text-btn-func{
+    .text-btn-func {
         font-size: 0.6rem;
-    font-weight: bold;
+        font-weight: bold;
     }
 }
 </style>
