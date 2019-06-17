@@ -14748,7 +14748,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.card {\n    background-color: #FF4C03;\n    border: 1px solid #f8f9fa;\n    color: white;\n}\n.btn-inicial-func {\n    padding: 15px;\n    margin-bottom: 3px;\n        height: 100px;\n}\n.section-funcoes {\n    margin-top: 15px;\n}\n.btn-inicial-mini {\n    width: 100%;\n    margin-bottom: 2px;\n}\n.card-columns {  \n    column-count: 2;\n}\n@media (min-width: 260px) and (max-width: 400px) {\n.text-btn-func {\n        font-size: 0.6rem;\n        font-weight: bold;\n}\n.card-deck{\n        column-count: 4;\n}\n\n/* .card-deck .card{\n    margin-left: 4px;\n}\n   \n    .card-deck {\n       flex-direction: row! important\n    } */\n}\n\n\n", ""]);
+exports.push([module.i, "\n.card {\n    background-color: #FF4C03;\n    border: 1px solid #f8f9fa;\n    color: white;\n}\n.btn-inicial-func {\n    padding: 15px;\n    margin-bottom: 20px;\n    height: 100px;\n}\n.section-funcoes {\n    margin-top: 15px;\n}\n.btn-inicial-mini {\n    width: 100%;\n    margin-bottom: 2px;\n}\n.card-columns {\n    column-count: 2;\n}\n.btn {\n    cursor: pointer;\n}\n@media (min-width: 260px) and (max-width: 400px) {\n.text-btn-func {\n        font-size: 0.6rem;\n        font-weight: bold;\n}\n.card-deck {\n        column-count: 4;\n}\n    /* .card-deck .card{\n    margin-left: 4px;\n}\n   \n    .card-deck {\n       flex-direction: row! important\n    } */\n}\n", ""]);
 
 // exports
 
@@ -14917,6 +14917,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "Home",
@@ -14950,7 +14958,7 @@ var render = function() {
           }
         },
         [
-          _vm._v("\n                MOSTRAR SALDO "),
+          _vm._v("\n            MOSTRAR SALDO "),
           _c("br"),
           _vm._v(" "),
           _vm.mostrarSaldo ? _c("p", [_vm._v("R$0,00")]) : _vm._e(),
@@ -14968,6 +14976,8 @@ var render = function() {
     _vm._v(" "),
     _vm._m(2),
     _vm._v(" "),
+    _vm._m(3),
+    _vm._v(" "),
     _c("div", { staticClass: "row row-space" })
   ])
 }
@@ -14976,19 +14986,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "row row-space justify-content-sm-center" },
-      [
-        _c("div", { staticClass: "col-sm-12" }, [
-          _c("p", { staticClass: " text-center text-white" }, [
-            _vm._v("Ola, nome da pessoa")
-          ]),
-          _vm._v(" "),
-          _c("hr")
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "row justify-content-sm-center" }, [
+      _c("div", { staticClass: "col-sm-12" }, [
+        _c("hr"),
+        _vm._v(" "),
+        _c("p", { staticClass: " text-center text-white" }, [
+          _vm._v("Ola, nome da pessoa")
+        ]),
+        _vm._v(" "),
+        _c("hr")
+      ])
+    ])
   },
   function() {
     var _vm = this
@@ -15132,7 +15140,7 @@ var staticRenderFns = [
                 "btn-inicial-func border border-light text-center text-white"
             },
             [
-              _c("h4", [_c("i", { staticClass: "fas fa-donate" })]),
+              _c("h4", [_c("i", { staticClass: "fas fa-comments-dollar" })]),
               _vm._v(" "),
               _c("span", { staticClass: " text-btn-func text-center" }, [
                 _vm._v(" Envio")
@@ -15183,6 +15191,20 @@ var staticRenderFns = [
             ]
           )
         ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row row-space" }, [
+      _c("div", { staticClass: "col-6" }, [
+        _c("div", { staticClass: "btn btn-light" }, [_vm._v("SUPORTE")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-6 text-right" }, [
+        _c("div", { staticClass: "btn btn-light" }, [_vm._v("SMART PAY")])
       ])
     ])
   }
@@ -15357,7 +15379,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.row-space-header {\n    margin-top: 20px;\n}\nbody{\n    background-color:#FF4C03\n}\n\n", ""]);
+exports.push([module.i, "\n.row-space-header {\n    /* margin-top: 20px; */\n}\nbody{\n    background-color:#FF4C03\n}\n\n", ""]);
 
 // exports
 
@@ -15368,6 +15390,8 @@ exports.push([module.i, "\n.row-space-header {\n    margin-top: 20px;\n}\nbody{\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
 //
 //
 //
@@ -15426,6 +15450,11 @@ var staticRenderFns = [
           [
             _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
               _vm._v("SMART +")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "navbar-text text-right" }, [
+              _c("i", { staticClass: "fab fa-whatsapp text-success" }),
+              _vm._v(" (11) 98675-2530 |\n            ")
             ]),
             _vm._v(" "),
             _c(

@@ -1,8 +1,9 @@
 <template>
     <div class="container">
     
-        <div class="row row-space justify-content-sm-center">
+        <div class="row justify-content-sm-center">
             <div class="col-sm-12">
+                <hr/>
                 <p class=" text-center text-white">Ola, nome da pessoa</p>
                 <hr/>
             </div>
@@ -28,21 +29,21 @@
         </div>
     
         <section class="section-funcoes">
-
-<div class="row row-space">
+    
+            <div class="row row-space">
                 <div class="col-4">
                     <div class="btn-inicial-func border border-light text-center text-white">
                         <h4>
                             <i class="fas fa-money-bill-alt"></i>
                         </h4>
                         <span class=" text-btn-func text-center"> Saldo</span><br>
-                       
+    
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="btn-inicial-func border border-light text-center text-white">
                         <h4>
-                              <i class="fas fa-qrcode"></i>
+                            <i class="fas fa-qrcode"></i>
                         </h4>
                         <p class=" text-btn-func text-center">Extrato</p>
                     </div>
@@ -53,74 +54,81 @@
                             <i class="fas fa-exchange-alt"></i>
                         </h4>
                         <p class=" text-btn-func text-center">Transferência</p><br>
-                         <!-- <p class=" text-btn-func text-center">Transferência</p> -->
+                        <!-- <p class=" text-btn-func text-center">Transferência</p> -->
                     </div>
                 </div>
             </div>
-
-
     
     
-        <div class="row row-space">
-            <div class="col-4">
-                <div class="btn-inicial-func border border-light text-center text-white">
-                    <h4>
-                        <i class="fas fa-donate"></i>
-                    </h4>
-                    <p class=" text-btn-func text-center"> Deposito </p>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="btn-inicial-func border border-light text-center text-white">
-                    <h4>
-                        <i class="far fa-credit-card"></i>
-                    </h4>
-                    <p class=" text-btn-func text-center"> Saque </p>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="btn-inicial-func border border-light text-center text-white">
-                    <h4>
-                        <i class="fas fa-chart-line"></i>
-                    </h4>
-                    <p class=" text-btn-func text-center"> Smart Invest </p>
-                </div>
-            </div>
-        </div>
     
-        <div class="row row-space">
-            <div class="col-4">
-                <div class="btn-inicial-func border border-light text-center text-white">
-                    <h4>
-                        <i class="fas fa-donate"></i>
-                    </h4>
-                    <span class=" text-btn-func text-center"> Envio</span><br>
-                    <p class=" text-btn-func text-center">(Câmbio)</p>
+    
+            <div class="row row-space">
+                <div class="col-4">
+                    <div class="btn-inicial-func border border-light text-center text-white">
+                        <h4>
+                            <i class="fas fa-donate"></i>
+                        </h4>
+                        <p class=" text-btn-func text-center"> Deposito </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="btn-inicial-func border border-light text-center text-white">
+                        <h4>
+                            <i class="far fa-credit-card"></i>
+                        </h4>
+                        <p class=" text-btn-func text-center"> Saque </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="btn-inicial-func border border-light text-center text-white">
+                        <h4>
+                            <i class="fas fa-chart-line"></i>
+                        </h4>
+                        <p class=" text-btn-func text-center"> Smart Invest </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="btn-inicial-func border border-light text-center text-white">
-                    <h4>
-                        <i class="fas fa-history"></i>
-                    </h4>
-                    <p class=" text-btn-func text-center">Apoio <br>Contabio Mei </p>
+    
+            <div class="row row-space">
+                <div class="col-4">
+                    <div class="btn-inicial-func border border-light text-center text-white">
+                        <h4>
+                            <i class="fas fa-comments-dollar"></i>
+                        </h4>
+                        <span class=" text-btn-func text-center"> Envio</span><br>
+                        <p class=" text-btn-func text-center">(Câmbio)</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="btn-inicial-func border border-light text-center text-white">
+                        <h4>
+                            <i class="fas fa-history"></i>
+                        </h4>
+                        <p class=" text-btn-func text-center">Apoio <br>Contabio Mei </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="btn-inicial-func border border-light text-center text-white">
+                        <h4>
+                            <i class="fas fa-bold"></i>
+                        </h4>
+                        <p class=" text-btn-func text-center">BPP</p><br><br>
+                    </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="btn-inicial-func border border-light text-center text-white">
-                    <h4>
-                        <i class="fas fa-bold"></i>
-                    </h4>
-                    <p class=" text-btn-func text-center">BPP</p><br><br>
-                </div>
-            </div>
-        </div>
         </section>
     
         <div class="row row-space">
+            <div class="col-6">
+                <div class="btn btn-light">SUPORTE</div>
+            </div>
+            <div class="col-6 text-right">
+                <div class="btn btn-light">SMART PAY</div>
+            </div>
+        </div>
     
-        </div>
-        </div>
+        <div class="row row-space"></div>
+    </div>
 </template>
 
 <script>
@@ -143,8 +151,8 @@ export default {
 
 .btn-inicial-func {
     padding: 15px;
-    margin-bottom: 3px;
-        height: 100px;
+    margin-bottom: 20px;
+    height: 100px;
 }
 
 .section-funcoes {
@@ -156,8 +164,12 @@ export default {
     margin-bottom: 2px;
 }
 
-.card-columns {  
-    column-count: 2;   
+.card-columns {
+    column-count: 2;
+}
+
+.btn {
+    cursor: pointer;
 }
 
 @media (min-width: 260px) and (max-width: 400px) {
@@ -165,12 +177,10 @@ export default {
         font-size: 0.6rem;
         font-weight: bold;
     }
-
-    .card-deck{
+    .card-deck {
         column-count: 4;
     }
-
-/* .card-deck .card{
+    /* .card-deck .card{
     margin-left: 4px;
 }
    
@@ -178,8 +188,6 @@ export default {
        flex-direction: row! important
     } */
 }
-
-
 </style>
 
 
