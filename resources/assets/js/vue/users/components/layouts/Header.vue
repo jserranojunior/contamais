@@ -3,11 +3,13 @@
 
    <div class="row-space-header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">SMART +</a> 
+        <a class="navbar-brand" href="#">            
+                <img class="img-logo img-fluid" src="img/logosmart.png" alt="">          
+        </a> 
         
 
          <span class="navbar-text text-right">
-                <i class="fab fa-whatsapp text-success"></i> (11) 98675-2530 |
+                <i class="fab fa-whatsapp text-success"></i> (11) 98675-2530
             </span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,6 +44,14 @@ export default {
 }
 body{
     background-color:#FF4C03
+}
+.img-logo{
+        width: 200px;
+}
+@media (min-width: 260px) and (max-width: 400px) {
+   .img-logo{
+        width: 120px;
+}
 }
 
 </style>

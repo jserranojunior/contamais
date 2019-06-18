@@ -15379,7 +15379,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.row-space-header {\n    /* margin-top: 20px; */\n}\nbody{\n    background-color:#FF4C03\n}\n\n", ""]);
+exports.push([module.i, "\n.row-space-header {\n    /* margin-top: 20px; */\n}\nbody{\n    background-color:#FF4C03\n}\n.img-logo{\n        width: 200px;\n}\n@media (min-width: 260px) and (max-width: 400px) {\n.img-logo{\n        width: 120px;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -15390,6 +15390,8 @@ exports.push([module.i, "\n.row-space-header {\n    /* margin-top: 20px; */\n}\n
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
 //
 //
 //
@@ -15449,12 +15451,15 @@ var staticRenderFns = [
           { staticClass: "navbar navbar-expand-lg navbar-light bg-light" },
           [
             _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
-              _vm._v("SMART +")
+              _c("img", {
+                staticClass: "img-logo img-fluid",
+                attrs: { src: "img/logosmart.png", alt: "" }
+              })
             ]),
             _vm._v(" "),
             _c("span", { staticClass: "navbar-text text-right" }, [
               _c("i", { staticClass: "fab fa-whatsapp text-success" }),
-              _vm._v(" (11) 98675-2530 |\n            ")
+              _vm._v(" (11) 98675-2530\n            ")
             ]),
             _vm._v(" "),
             _c(
