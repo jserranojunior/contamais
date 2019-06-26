@@ -1,4 +1,7 @@
+
 <template>
+<div>
+    <Header></Header>  
     <div class="container">
     
         <div class="row justify-content-sm-center">
@@ -140,16 +143,22 @@
     
         <div class="row row-space"></div>
     </div>
+</div>
+    
 </template>
 
 <script>
+    import Header from '../components/layouts/Header'
 export default {
     name: "Home",
     data() {
         return {
             mostrarSaldo: false
         }
-    }
+    },
+    components: {
+            Header,
+            },
 }
 </script>
 
