@@ -1,8 +1,8 @@
 <?php
 
-Route::get('/', function () {return view('inicioimagem');});
+Route::get('/imagem', function () {return view('inicioimagem');});
 
-Route::get('/novo', function (){return view('vue.user.layouts.app');});
+Route::get('/', function (){return view('vue.user.layouts.app');});
 
 /* ##### ROTAS DEFAULT ###### */
     Route::get('/logout','Auth\LoginController@logout')->name('logout');    

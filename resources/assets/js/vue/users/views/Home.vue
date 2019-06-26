@@ -2,11 +2,22 @@
     <div class="container">
     
         <div class="row justify-content-sm-center">
-            <div class="col-sm-12">
-                <hr/>
-                <p class=" text-center text-white">Ola, nome da pessoa</p>
-                <hr/>
+            
+            <div class="col-sm-12">    
+                <hr/>            
+                <p class=" text-center text-white">Ola, nome da pessoa - 
+                    <router-link to="/">
+                        <a href="#">Sair</a>
+                    </router-link>
+                    </p>    
+                    <hr/>            
             </div>
+
+            <!-- <div class="col-sm-12 text-center">
+                <button class="btn btn-sm btn-light">Sair</button>
+                 
+            </div> -->
+           
         </div>
     
         <div class="row row-space">
