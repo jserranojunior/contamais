@@ -54,7 +54,7 @@
                                 <input class="form-control" type="text" placeholder="CPF/CNPJ">
                             </div>
                             <div class="col-6">
-                                <input class="form-control" type="text" placeholder="DATA DE NASCIMENTO">
+                                <input class="form-control" type="text" placeholder="DATA NASCIMENTO">
                             </div>
                         </div>
                     </div>
@@ -147,8 +147,15 @@
                         <div class="row">
                             <div class="col-12">
                                 <input class="form-control" type="text" placeholder="RECIBO DO IMPOSTO DE RENDA">
-                            </div>
-                            
+                            </div>                            
+                        </div>
+                    </div>
+
+                     <div class="form-group">
+                        <div class="row">
+                            <div class="col-12 text-right">
+                                <div class="btn btn-outline-light font-weight-bold">CADASTRAR</div>
+                            </div>                            
                         </div>
                     </div>
     
