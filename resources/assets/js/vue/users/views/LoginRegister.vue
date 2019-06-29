@@ -32,7 +32,7 @@
                     <input type="password" class="form-control input-main-login" placeholder="Crie uma senha">
                 </div>
                 <div class="col-sm-11 text-right">
-                    <router-link to="/home">
+                    <router-link to="/register">
                     <div class="btn btn-sm btn-outline-light font-weight-bold">CADASTRAR</div>
                     </router-link>
                 </div>
