@@ -15,7 +15,11 @@
 
             
              <LoginComponent></LoginComponent>
-        
+
+        <hr class="hr-space"/>
+
+        <ReceberComponent></ReceberComponent>
+
                 <hr/>
        
             <Footer></Footer>         
@@ -27,12 +31,14 @@
 <script>
 import LoginComponent from '../components/auth/Login'
 import RegisterComponent from '../components/auth/Register'
+import ReceberComponent from '../components/auth/Receber'
 import Footer from '../components/layouts/Footer'
 export default {
     name: "Register",
     components:{
         LoginComponent,
         RegisterComponent,
+        ReceberComponent,
         Footer,
     }
 }

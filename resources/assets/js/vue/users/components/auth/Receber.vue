@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-sm-11 text-right">
                     <router-link to="/register">
-                    <div class="btn btn-sm btn-outline-light font-weight-bold">CADASTRAR</div>
+                    <div class="btn btn-sm btn-outline-light font-weight-bold">RECEBER</div>
                     </router-link>
                 </div>
             </div>
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-    name: "Register"
+    name: "Receber"
 }
 </script>
 

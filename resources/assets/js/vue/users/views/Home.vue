@@ -2,8 +2,8 @@
     <div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
-                    <section class="bg-dark section">
+                <div class="col-12 bg-dark">
+                    <section class="section">
                         <div class="row justify-content-sm-center">
                             <div class="col-12 text-center">
                                 <img class="img-logo img-fluid" src="img/logo-white-conta-smart.png" alt="">
@@ -11,7 +11,7 @@
     
                             </div>
                         </div>
-                        <div class="row justify-content-sm-center">
+                        <div class="row btn-present justify-content-sm-center">
                             <div class="col-12 text-center">
                                 <div class="btn btn-outline-light font-weight-bold">O Presente do futuro bancário</div>
                             </div>
@@ -26,6 +26,12 @@
                                 <div class="col-12  text-center">
                                     <router-link to="/register">
                                     <div class="btn btn-inicial-smart btn-primary">Cadastre</div>
+                                    </router-link>
+                                </div>
+
+                                <div class="col-12  text-center">
+                                    <router-link to="/receber">
+                                    <div class="btn btn-inicial-smart btn-primary">Receber</div>
                                     </router-link>
                                 </div>
                             </div>
@@ -96,16 +102,20 @@ export default {
 </script>
 
 <style>
+.btn-present{
+    margin-top:20px;
+    margin-bottom:20px;
+}
 img.img-celular.img-fluid {
     position: absolute;
-    top: -128px;
+    top: -181px;
     width: 80%;
 }
 
 .bg-black{
     background-color:#211F21! important;
 }
-.bg-smart {
+.bg-smart, body{
     background-color: #FF4C03
 }
 

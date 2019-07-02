@@ -8,16 +8,21 @@
                     <hr/>
                 </div>
             </div>
+
+            <ReceberComponent></ReceberComponent>
+
+             <hr class="hr-space"/>
     
-            <LoginComponent></LoginComponent>
+             <RegisterComponent></RegisterComponent>  
 
                 <hr class="hr-space"/>
 
-             <RegisterComponent></RegisterComponent>  
-        <hr class="hr-space"/>
+            
+             <LoginComponent></LoginComponent>
 
-        <ReceberComponent></ReceberComponent>
+       
 
+        
 
                 <hr/>
        
@@ -33,7 +38,7 @@ import RegisterComponent from '../components/auth/Register'
 import ReceberComponent from '../components/auth/Receber'
 import Footer from '../components/layouts/Footer'
 export default {
-    name: "Login",
+    name: "Receber",
     components:{
         LoginComponent,
         RegisterComponent,
