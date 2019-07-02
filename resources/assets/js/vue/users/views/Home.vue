@@ -1,213 +1,132 @@
-
 <template>
-<div>
-    <Header></Header>  
-    <div class="container">
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <section class="bg-dark section">
+                        <div class="row justify-content-sm-center">
+                            <div class="col-12 text-center">
+                                <img class="img-logo img-fluid" src="img/logo-white-conta-smart.png" alt="">
+                                <h4 class="font-weight-bold text-center text-white">www.contasmartmais.com.br</h4>
     
-        <div class="row justify-content-sm-center">
-            
-            <div class="col-sm-12">    
-                <hr/>            
-                <p class=" text-center text-white">Ola, nome da pessoa - 
-                    <router-link to="/">
-                        <a href="#">Sair</a>
-                    </router-link>
-                    </p>    
-                    <hr/>            
+                            </div>
+                        </div>
+                        <div class="row justify-content-sm-center">
+                            <div class="col-12 text-center">
+                                <div class="btn btn-outline-light font-weight-bold">O Presente do futuro bancário</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="col-12  text-center">
+                                    <router-link to="/login">
+                                    <div class="btn btn-inicial-smart btn-primary">Acesse</div><br>
+                                    </router-link>
+                                </div>
+                                <div class="col-12  text-center">
+                                    <router-link to="/register">
+                                    <div class="btn btn-inicial-smart btn-primary">Cadastre</div>
+                                    </router-link>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </section>
+    
+                </div>
             </div>
-
-            <!-- <div class="col-sm-12 text-center">
-                <button class="btn btn-sm btn-light">Sair</button>
-                 
-            </div> -->
-           
+            <div class="row">
+                <div class="col-12">
+                    <section class="section bg-smart">
+                <div class="row justify-content-sm-center">
+                    <div class="col-6">
+                        <ul class="text-white font-weight-bold">
+                            <li>
+                                Saldo
+                            </li>
+                            <li>
+                                Extrato
+                            </li>
+                            <li>
+                                Transferência
+                            </li>
+                            <li>
+                                Depósito
+                            </li>
+                            <li>
+                                Saque
+                            </li>
+                            <li>
+                                Investimento
+                            </li>
+                            <li>
+                                Clube de desconto
+                            </li>
+                            <li>
+                                Pagamentos
+                            </li>
+                            <li>
+                                Comprovantes
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-6">
+    
+                        <img class="img-celular img-fluid" src="img/celular.png" alt="">
+    
+    
+                    </div>
+                </div>
+    
+    
+            </section>
+                </div>
+            </div>
+    
+    
         </div>
-    
-        <div class="row row-space">
-            <div @click="mostrarSaldo = !mostrarSaldo" class="col-6 text-white text-center">
-                MOSTRAR SALDO <br>
-    
-                <p v-if="mostrarSaldo">R$0,00</p>
-    
-                <p v-if="mostrarSaldo == false" class="text-center"><i class="fas fa-chevron-down"></i></p>
-    
-    
-            </div>
-    
-    
-            <div class="col-6 text-white">
-                <div class="btn btn-light btn-sm btn-inicial-mini">Extrato</div><br>
-                <div class="btn btn-light btn-sm btn-inicial-mini">Transfêrencias</div><br>
-                <div class="btn btn-light btn-sm btn-inicial-mini">Pagamentos</div>
-            </div>
-        </div>
-    
-        <section class="section-funcoes">
-    
-            <div class="row row-space">
-                <div class="col-4">
-                    <div class="btn-inicial-func border border-light text-center text-white">
-                        <h4>
-                            <i class="fas fa-money-bill-alt"></i>
-                        </h4>
-                        <span class=" text-btn-func text-center"> Saldo</span><br>
-    
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="btn-inicial-func border border-light text-center text-white">
-                        <h4>
-                            <i class="fas fa-qrcode"></i>
-                        </h4>
-                        <p class=" text-btn-func text-center">Extrato</p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="btn-inicial-func border border-light text-center text-white">
-                        <h4>
-                            <i class="fas fa-exchange-alt"></i>
-                        </h4>
-                        <p class=" text-btn-func text-center">Transferência</p><br>
-                        <!-- <p class=" text-btn-func text-center">Transferência</p> -->
-                    </div>
-                </div>
-            </div>
-    
-    
-    
-    
-            <div class="row row-space">
-                <div class="col-4">
-                    <div class="btn-inicial-func border border-light text-center text-white">
-                        <h4>
-                            <i class="fas fa-donate"></i>
-                        </h4>
-                        <p class=" text-btn-func text-center"> Deposito </p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="btn-inicial-func border border-light text-center text-white">
-                        <h4>
-                            <i class="far fa-credit-card"></i>
-                        </h4>
-                        <p class=" text-btn-func text-center"> Saque </p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="btn-inicial-func border border-light text-center text-white">
-                        <h4>
-                            <i class="fas fa-chart-line"></i>
-                        </h4>
-                        <p class=" text-btn-func text-center"> Smart Invest </p>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="row row-space">
-                <div class="col-4">
-                    <div class="btn-inicial-func border border-light text-center text-white">
-                        <h4>
-                            <i class="fas fa-comments-dollar"></i>
-                        </h4>
-                        <span class=" text-btn-func text-center"> Envio</span><br>
-                        <p class=" text-btn-func text-center">(Câmbio)</p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="btn-inicial-func border border-light text-center text-white">
-                        <h4>
-                            <i class="fas fa-history"></i>
-                        </h4>
-                        <p class=" text-btn-func text-center">Apoio <br>Contabio Mei </p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="btn-inicial-func border border-light text-center text-white">
-                        <h4>
-                            <i class="fas fa-bold"></i>
-                        </h4>
-                        <p class=" text-btn-func text-center">BPP</p><br><br>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <div class="row row-space">
-            <div class="col-6">
-                <div class="btn btn-light">SUPORTE</div>
-            </div>
-            <div class="col-6 text-right">
-                <div class="btn btn-light">SMART PAY</div>
-            </div>
-        </div>
-    
-        <div class="row row-space"></div>
     </div>
-</div>
-    
 </template>
 
 <script>
-    import Header from '../components/layouts/Header'
 export default {
-    name: "Home",
-    data() {
-        return {
-            mostrarSaldo: false
-        }
-    },
-    components: {
-            Header,
-            },
+    name: "Home"
 }
 </script>
 
 <style>
-.card {
-    background-color: #FF4C03;
-    border: 1px solid #f8f9fa;
-    color: white;
+img.img-celular.img-fluid {
+    position: absolute;
+    top: -128px;
+    width: 80%;
 }
 
-.btn-inicial-func {
-    padding: 15px;
-    margin-bottom: 20px;
-    height: 100px;
+.bg-black{
+    background-color:#211F21! important;
+}
+.bg-smart {
+    background-color: #FF4C03
 }
 
-.section-funcoes {
-    margin-top: 15px;
+.section {
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-.btn-inicial-mini {
-    width: 100%;
-    margin-bottom: 2px;
+.btn-inicial-smart {
+    margin-bottom: 0px;
+    margin-top: 14px;
 }
 
-.card-columns {
-    column-count: 2;
+.btn.btn-inicial-smart.btn-primary {
+    background-color: #fe4d01;
+    width: 6em;
+    border-color: #d64000;
 }
 
-.btn {
-    cursor: pointer;
-}
-
-@media (min-width: 260px) and (max-width: 400px) {
-    .text-btn-func {
-        font-size: 0.6rem;
-        font-weight: bold;
-    }
-    .card-deck {
-        column-count: 4;
-    }
-    /* .card-deck .card{
-    margin-left: 4px;
-}
-   
-    .card-deck {
-       flex-direction: row! important
-    } */
+.btn.btn-inicial-smart.btn-primary:hover {
+    background-color: #ff601b;
 }
 </style>
-
 

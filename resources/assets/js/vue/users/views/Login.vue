@@ -9,12 +9,11 @@
                 </div>
             </div>
     
-             <RegisterComponent></RegisterComponent>  
+            <LoginComponent></LoginComponent>
 
                 <hr class="hr-space"/>
 
-            
-             <LoginComponent></LoginComponent>
+             <RegisterComponent></RegisterComponent>  
         
                 <hr/>
        
@@ -29,7 +28,7 @@ import LoginComponent from '../components/auth/Login'
 import RegisterComponent from '../components/auth/Register'
 import Footer from '../components/layouts/Footer'
 export default {
-    name: "Register",
+    name: "Login",
     components:{
         LoginComponent,
         RegisterComponent,

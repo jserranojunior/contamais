@@ -1,11 +1,18 @@
 import Home from './views/Home'
-import LoginRegister from './views/LoginRegister'
+import HomeLogin from './views/HomeLogin'
 import Register from './views/Register'
+import Login from './views/Login'
+
+import RegisterComplete from './views/Register'
 
 const routes = [
-    {path:'/home', name:'home', component: Home},
-    {path:'/', name:'loginRegister', component: LoginRegister},
-    {path:'/register', name:'register', component: Register},
+    {path:'/', name:'Home', component: Home},
+
+
+    {path:'/login', name:'Login', component: Login},
+    {path:'/register', name:'Register', component: Register},
+    {path:'/registercomplete', name:'RegisterComplete', component: RegisterComplete},
+    {path:'/user/home', name:'HomeLogin', component: HomeLogin},
 ]
 
 export default routes
