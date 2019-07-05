@@ -6,7 +6,7 @@
                     <section class="section">
                         <div class="row justify-content-sm-center">
                             <div class="col-12 text-center">
-                                <img class="img-logo img-fluid" src="img/logo-white-conta-smart.png" alt="">
+                                <img class="img-logo img-fluid" src="img/logo-smart-white.png" alt="">
                                 <h4 class="font-weight-bold text-center text-white">www.contasmartmais.com.br</h4>
     
                             </div>
@@ -79,7 +79,7 @@
     
                     <div class="col-6">
     
-                        <img class="img-celular img-fluid" src="img/celular.png" alt="">
+                        <img class="img-celular img-fluid" src="img/mao.png" alt="">
     
     
                     </div>
@@ -110,6 +110,10 @@ img.img-celular.img-fluid {
     position: absolute;
     top: -181px;
     width: 80%;
+}
+
+img.img-logo.img-fluid {
+    width: 326px;
 }
 
 .bg-black{
