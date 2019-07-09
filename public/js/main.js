@@ -14899,10 +14899,12 @@ if (inBrowser && window.Vue) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__views_HomeLogin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__views_HomeLogin__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_Register__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_Register___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__views_Register__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_Login__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_Login___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__views_Login__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_Receber__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_Receber___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__views_Receber__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_RegisterInicial__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_RegisterInicial___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__views_RegisterInicial__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_Login__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_Login___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__views_Login__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_Receber__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_Receber___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__views_Receber__);
 
 
 
@@ -14911,7 +14913,12 @@ if (inBrowser && window.Vue) {
 
 
 
-var routes = [{ path: '/', name: 'Home', component: __WEBPACK_IMPORTED_MODULE_0__views_Home___default.a }, { path: '/login', name: 'Login', component: __WEBPACK_IMPORTED_MODULE_3__views_Login___default.a }, { path: '/register', name: 'Register', component: __WEBPACK_IMPORTED_MODULE_2__views_Register___default.a }, { path: '/registercomplete', name: 'RegisterComplete', component: __WEBPACK_IMPORTED_MODULE_2__views_Register___default.a }, { path: '/receber', name: 'Receber', component: __WEBPACK_IMPORTED_MODULE_4__views_Receber___default.a }, { path: '/user/home', name: 'HomeLogin', component: __WEBPACK_IMPORTED_MODULE_1__views_HomeLogin___default.a }];
+
+var routes = [
+// {path:'/', name:'Home', component: Home},
+
+
+{ path: '/login', name: 'Login', component: __WEBPACK_IMPORTED_MODULE_4__views_Login___default.a }, { path: '/register', name: 'Register', component: __WEBPACK_IMPORTED_MODULE_2__views_Register___default.a }, { path: '/', name: 'RegisterInicial', component: __WEBPACK_IMPORTED_MODULE_3__views_RegisterInicial___default.a }, { path: '/registercomplete', name: 'RegisterComplete', component: __WEBPACK_IMPORTED_MODULE_2__views_Register___default.a }, { path: '/receber', name: 'Receber', component: __WEBPACK_IMPORTED_MODULE_5__views_Receber___default.a }, { path: '/user/home', name: 'HomeLogin', component: __WEBPACK_IMPORTED_MODULE_1__views_HomeLogin___default.a }];
 
 /* harmony default export */ __webpack_exports__["a"] = (routes);
 
@@ -17144,6 +17151,392 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-f6ede1f8", module.exports)
+  }
+}
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(59)
+}
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(61)
+/* template */
+var __vue_template__ = __webpack_require__(62)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/vue/users/views/RegisterInicial.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-94505302", Component.options)
+  } else {
+    hotAPI.reload("data-v-94505302", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(60);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("21f8169d", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-94505302\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./RegisterInicial.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-94505302\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./RegisterInicial.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\ninput.form-control.input-main-login {\n    margin-bottom: 10px;\n    border: aliceblue;\n    border-bottom: 1px solid white;\n    background-color: #f0f8ff00;\n    color: white;\n    border-radius: 0rem;\n}\n.form-control:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);\n}\n.form-control::-moz-placeholder {\n    color: white;\n}\n\n/* Mozilla Firefox 19+ */\n.form-control:-ms-input-placeholder {\n    color: white;\n}\n\n/* Internet Explorer 10-11 */\n.form-control::-ms-input-placeholder {\n    color: white;\n}\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.bg-black-smart {\n    background-color: #252525;\n}\nbody {\n    background-color: #FF4C03\n}\n.text-smart {\n    color: #FF4C03\n}\n.img-logo {\n    margin-bottom: 20px;\n    margin-top: 30px;\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\ninput.form-control.input-main-login {\n    margin-bottom: 10px;\n    border: aliceblue;\n    border-bottom: 1px solid white;\n    background-color: #f0f8ff00;\n    color: white;\n    border-radius: 0rem;\n}\n.form-control:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);\n}\n.form-control::-webkit-input-placeholder {\n    color: white;\n}\n.form-control:-moz-placeholder {\n    color: white;\n}\n.form-control::-moz-placeholder {\n    color: white;\n}\n.form-control:-ms-input-placeholder {\n    color: white;\n}\n.form-control::-ms-input-placeholder {\n    color: white;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 61 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "RegisterInicial",
+    data: function data() {
+        return {
+            inputs: {}
+        };
+    },
+
+    methods: {
+        cadastrar: function cadastrar() {
+            console.log(this.inputs);
+        }
+    }
+});
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "container-fluid" }, [
+      _c("div", { staticClass: "row justify-content-center" }, [
+        _c("div", { staticClass: "col-lg-8" }, [
+          _c(
+            "div",
+            { staticClass: "row row-space justify-content-sm-center" },
+            [
+              _c("div", { staticClass: "col-12" }, [
+                _c("div", { staticClass: "form-group" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.inputs.nome,
+                        expression: "inputs.nome"
+                      }
+                    ],
+                    staticClass: "form-control input-main-login",
+                    attrs: { type: "text", placeholder: "NOME COMPLETO" },
+                    domProps: { value: _vm.inputs.nome },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.inputs, "nome", $event.target.value)
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.inputs.email,
+                        expression: "inputs.email"
+                      }
+                    ],
+                    staticClass: "form-control input-main-login",
+                    attrs: { type: "text", placeholder: "EMAIL" },
+                    domProps: { value: _vm.inputs.email },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.inputs, "email", $event.target.value)
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-6" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.inputs.telefone,
+                            expression: "inputs.telefone"
+                          }
+                        ],
+                        staticClass: "form-control input-main-login",
+                        attrs: { type: "text", placeholder: "TELEFONE" },
+                        domProps: { value: _vm.inputs.telefone },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.inputs,
+                              "telefone",
+                              $event.target.value
+                            )
+                          }
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-6" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.inputs.cpfcnpj,
+                            expression: "inputs.cpfcnpj"
+                          }
+                        ],
+                        staticClass: "form-control input-main-login",
+                        attrs: { type: "text", placeholder: "CPF/CNPJ" },
+                        domProps: { value: _vm.inputs.cpfcnpj },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(_vm.inputs, "cpfcnpj", $event.target.value)
+                          }
+                        }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-12" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.inputs.password,
+                            expression: "inputs.password"
+                          }
+                        ],
+                        staticClass: "form-control input-main-login",
+                        attrs: { type: "password", placeholder: "SENHA" },
+                        domProps: { value: _vm.inputs.password },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.inputs,
+                              "password",
+                              $event.target.value
+                            )
+                          }
+                        }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-12 text-right" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "btn btn-outline-light font-weight-bold",
+                          on: {
+                            click: function($event) {
+                              _vm.cadastrar()
+                            }
+                          }
+                        },
+                        [_vm._v("CADASTRAR")]
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ]
+          )
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container-fluid" }, [
+      _c(
+        "div",
+        { staticClass: "row justify-content-sm-center bg-black-smart" },
+        [
+          _c("div", { staticClass: "col-12 text-center" }, [
+            _c("img", {
+              staticClass: "img-logo img-fluid",
+              attrs: { src: "img/banco-do-futuro.png", alt: "" }
+            })
+          ])
+        ]
+      )
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-94505302", module.exports)
   }
 }
 
