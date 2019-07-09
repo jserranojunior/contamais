@@ -71,6 +71,7 @@ return array(
     'App\\User' => $baseDir . '/app/User.php',
     'ArithmeticError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
     'AssertionError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
+    'AuthNewRegisterController' => $baseDir . '/database/migrations/2019_07_09_165128_AuthNewRegisterController.php',
     'BonusPasanaku' => $baseDir . '/database/migrations/2018_02_23_115157_bonus_pasanaku.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
     'Carbon\\CarbonInterval' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonInterval.php',

@@ -383,6 +383,7 @@ class ComposerStaticInit83e28779b66b8b9a3758bb85d31ff5aa
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
+        'AuthNewRegisterController' => __DIR__ . '/../..' . '/database/migrations/2019_07_09_165128_AuthNewRegisterController.php',
         'BonusPasanaku' => __DIR__ . '/../..' . '/database/migrations/2018_02_23_115157_bonus_pasanaku.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',

@@ -5,52 +5,53 @@
                 <div class="col-12 text-center">
                     <img class="img-logo img-fluid" src="img/banco-do-futuro.png" alt="">
                 </div>
-                <!-- <div class="col-6 text-left ">
-                                    <h3 class="text-smart">O banco do futuro</h3>
-                                </div> -->
             </div>              
-        </div>
+        </div> <br>
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="row row-space justify-content-sm-center">
                 <div class="col-12">
                     <div class="form-group">
-                        <input class="form-control input-main-login" v-model="inputs.nome" type="text" placeholder="NOME COMPLETO">
+                        <input class="form-control input-main-login" v-model="inputs.name" type="text" placeholder="NOME COMPLETO">
                     </div>
     
                     <div class="form-group">
                         <input class="form-control input-main-login" v-model="inputs.email" type="text" placeholder="EMAIL">
                     </div>
     
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-6">
-                                <input class="form-control input-main-login" v-model="inputs.telefone" type="text" placeholder="TELEFONE">
-                            </div>
-    
-    
-                            <div class="col-6">
-                                <input class="form-control input-main-login" v-model="inputs.cpfcnpj" type="text" placeholder="CPF/CNPJ">
-                            </div>
-    
-                        </div>
+                    <div class="form-group">                        
+                            <div class="col-12">
+                                <input class="form-control input-main-login" v-model="inputs.celular" type="text" placeholder="TELEFONE">
+                            </div>                               
+                    </div>
+
+                    <div class="form-group">                        
+                            <div class="col-12">
+                                <input class="form-control input-main-login" v-model="inputs.cpf" type="text" placeholder="CPF">
+                           
+                            </div>                        
                     </div>
     
                     <div class="form-group">
-                        <div class="row">
                             <div class="col-12">
                                 <input class="form-control input-main-login" v-model="inputs.password" type="password" placeholder="SENHA">
                             </div>
-                        </div>
                     </div>
                     <div class="form-group">
                         <div class="row">
                             <div class="col-12 text-right">
-                                <div class="btn btn-outline-light font-weight-bold" @click="cadastrar()">CADASTRAR</div>
+                                <div class="btn btn-outline-light font-weight-bold" @click="Register()">CADASTRAR</div>
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="row" v-if="message === 'Cadastrado'">
+                        <div class="col-12">
+                            <h5 class="text-center tee">CADASTRADO COM SUCESSO</h5>
+                        </div>
+                    </div>
+
                 </div>
             </div>
     
@@ -61,17 +62,35 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
     name: "RegisterInicial",
     data() {
         return {
-            inputs: {}
+            inputs: {},
+            data: "",
+            message: "",
         }
     },
     methods: {
         cadastrar() {
             console.log(this.inputs)
-        }
+        },
+ 
+          Register(context) {        
+            let url = '/api/users/register';        
+            
+            axios
+                .post(url, this.inputs)
+                .then(response => {
+                    this.message = response.data.message   
+                    this.data = response.data.data
+                    console.log(this.message)      
+                })
+                .catch(function (error) {
+                    console.log(response);
+                });
+        },
     }
 }
 </script>
@@ -89,19 +108,12 @@ input.form-control.input-main-login {
 .form-control:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
 }
-
 .form-control::-moz-placeholder {
     color: white;
 }
-
-/* Mozilla Firefox 19+ */
-
 .form-control:-ms-input-placeholder {
     color: white;
 }
-
-/* Internet Explorer 10-11 */
-
 .form-control::-ms-input-placeholder {
     color: white;
 }
@@ -148,21 +160,22 @@ input.form-control.input-main-login {
 
 .form-control::-webkit-input-placeholder {
     color: white;
+    text-align: center;
 }
-
 .form-control:-moz-placeholder {
     color: white;
+    text-align: center;
 }
-
 .form-control::-moz-placeholder {
     color: white;
+    text-align: center;
 }
-
 .form-control:-ms-input-placeholder {
     color: white;
+    text-align: center;
 }
-
 .form-control::-ms-input-placeholder {
     color: white;
+    text-align: center;
 }
 </style>
