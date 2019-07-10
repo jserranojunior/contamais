@@ -22,13 +22,13 @@
     
                     <div class="form-group">                        
                             <div class="col-12">
-                                <input class="form-control input-main-login" v-model="inputs.celular" type="text" placeholder="TELEFONE">
+                                <input class="form-control input-main-login" v-model="inputs.celular" v-mask="'(##) #####-####'" type="text" placeholder="TELEFONE">
                             </div>                               
                     </div>
 
                     <div class="form-group">                        
                             <div class="col-12">
-                                <input class="form-control input-main-login" v-model="inputs.cpf" type="text" placeholder="CPF">
+                                <input class="form-control input-main-login" v-model="inputs.cpf" v-mask="'###.###.###-##'" type="text" placeholder="CPF">
                            
                             </div>                        
                     </div>
@@ -48,7 +48,7 @@
                     
                     <div class="row" v-if="message === 'Cadastrado'">
                         <div class="col-12">
-                            <h5 class="text-center tee">CADASTRADO COM SUCESSO</h5>
+                            <h5 class="text-center">CADASTRADO COM SUCESSO</h5>
                         </div>
                     </div>
 
@@ -62,6 +62,7 @@
 </template>
 
 <script>
+import { mask } from "vue-the-mask";
 import axios from 'axios'
 export default {
     name: "RegisterInicial",
@@ -91,7 +92,8 @@ export default {
                     console.log(response);
                 });
         },
-    }
+    },
+    directives: { mask }
 }
 </script>
 
