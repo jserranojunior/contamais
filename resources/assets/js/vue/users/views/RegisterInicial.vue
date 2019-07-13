@@ -93,7 +93,8 @@ export default {
                 .then(response => {
                     this.message = response.data.message   
                     this.data = response.data.data
-                    console.log(this.message)      
+                    console.log(this.message) 
+                    this.inputs = ""     
                 })
                 .catch(function (error) {
                     console.log(error);

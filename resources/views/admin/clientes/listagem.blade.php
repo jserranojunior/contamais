@@ -24,13 +24,14 @@
          </tr>
     </thead>
     <tbody>     
-        @foreach ($dados as $dados)
-            <tr onclick="editarCliente({{$dados->id}})" class="mouse-point">
-                <td>  {{$dados->name}}</td>
-                <td>  {{$dados->email}}</td>
-                <td class="cpf_mascara">  {{$dados->cpf}}</td>
-                <td class="data_mascara">  {{$dados->data_nascimento}}</td>
-                <td class=" @if($dados->celular !== null) telefone_mascara @endif ">  {{$dados->celular}}</td>
+        @foreach ($dados as $item)
+
+            <tr onclick="editarCliente({{$item->id}})" class="mouse-point">
+                <td>  {{$item->name}}</td>
+                <td>  {{$item->email}}</td>
+                <td class="cpf_mascara">  {{$item->cpf}}</td>
+                <td class="data_mascara">  {{$item->data_nascimento}}</td>
+                <td> {{$item->celular}}</td>
             </tr>      
         @endforeach
         </tbody>

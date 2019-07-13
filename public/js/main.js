@@ -17679,6 +17679,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 _this.message = response.data.message;
                 _this.data = response.data.data;
                 console.log(_this.message);
+                _this.inputs = "";
             }).catch(function (error) {
                 console.log(error);
             });

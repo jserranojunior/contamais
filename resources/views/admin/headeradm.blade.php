@@ -101,15 +101,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <li><a href="{{URL('admin/clientes')}}"><i class="fa fa-users"></i> <span>CLIENTES</span></a></li>
         
         
-        <li>
+        <!-- <li>
           <a href="{{Route('admin.analise.index')}}">
             <i class="fa fa-file-text-o"></i>  
               <span>ANALISE</span>
           </a>
-        </li>
+        </li> -->
 
         
-        <li class="treeview">
+        <!-- <li class="treeview">
               <a href="#">
                   <i class="fa fa-bell-o"></i> <span>OPERACÕES</span>
                   
@@ -117,8 +117,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <i class="fa fa-angle-left pull-right"></i>
                 </span>           
               </a>
-              <ul class="treeview-menu">
-            <li><a href="{{URL('admin/operacoes')}}"><i class="f"></i> <span>PASANAKU</span>
+              <ul class="treeview-menu"> -->
+            <!-- <li><a href="{{URL('admin/operacoes')}}"><i class="f"></i> <span>PASANAKU</span> -->
                <!--
             @if($notification > 0) 
                     <span class="pull-right-container">
@@ -127,18 +127,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>               
                   @endif
 -->
-            </a></li>
-             
+            <!-- </a></li> -->
+<!--              
             <li><a href="{{URL('admin/operacoes/smart')}}"><i class=""></i> <span>SMART</span></a></li>
               </ul>
-            </li>
-
+            </li> -->
+<!-- 
             <li>
           <a href="{{Route('admin.smart.index')}}">
             <i class="fa fa-line-chart"></i>  
               <span>SMARTCOIN</span>
           </a>
-        </li>
+        </li> -->
        
         <li>
           <a href="{{Route('admin.logout')}}">

@@ -45,12 +45,12 @@
         </tr>   
         
         <tr>
-            <td>
+            <!-- <td>
                 <label for="valor_pasanaku" class="label-control"> Valor Pasanaku </label>
             </td>
             <td> 
                 <input type="text" value="{{$item->pasa_valor}}" class="form-control dinheiro_mascara" name="valor_pasanaku">
-            </td>
+            </td> -->
 
 
             <td>
@@ -59,14 +59,13 @@
             <td> 
                 <input type="text" value="{{$item->coin_valor}}" class="form-control dinheiro_mascara" name="valor_coin">
             </td>
-        </tr> 
-        <tr>
-            <td>
+        
+            <!-- <td>
                 <label for="data_pasanaku" class="label-control"> Data Pasanaku </label>
             </td>
             <td> 
                 <input type="date" value="" class="form-control" name="data_pasanaku">
-            </td>
+            </td> -->
 
 
             <td>
