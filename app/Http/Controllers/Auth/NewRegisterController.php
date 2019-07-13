@@ -18,8 +18,9 @@ class NewRegisterController extends Controller
   
         public function create(Request $data)
         {       
+            $data = $data->all();
                     //  return response()->json([
-                    //     'message' => $data->all(),  
+                    //     'message' => $data,  
                     //     'data' => $data,              
                     // ]);
            
@@ -30,23 +31,38 @@ class NewRegisterController extends Controller
                 'email.unique' => 'Já existe esse EMAIL cadastrado',
                 'password.required' => 'É necessario colocar a senha',
             ];                         
-                $validate = Validator::make($data->all(), $this->Users->rules, $messages);
+                $validate = Validator::make($data, $this->Users->rules, $messages);
                 if($validate->fails()){               
                     return response()->json([
                         'message' => $validate->errors(),  
                         'data' => '',              
                     ]);
                 }else{
-                    $data['password'] = Hash::make($data->password);
                     
-                    $this->Users = $this->Users->create($data->all());
-                    $this->Users->save();   
+                        $data['password'] = Hash::make($data['password']);
+
+                  
+                    
+                    try{
+                        $this->Users = $this->Users->create($data);
+                    
+                        $this->Users->save();   
                    
     
-                    return response()->json([
-                        'message' => 'Cadastrado',  
-                        'data' => $this->Users->id,              
-                    ]);
+                        return response()->json([
+                            'message' => 'Cadastrado',  
+                            // 'message' => $data['password'], 
+                            'data' => $data,             
+                        ]);
+                        
+                    }catch(\Exception $e){
+                        return response()->json([
+                            'message' =>  $e,  
+                            'data' => '',              
+                        ]); 
+                    }
+                    
+            
     
                    
                 }    

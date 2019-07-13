@@ -41,7 +41,8 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="col-12 text-right">
-                                <div class="btn btn-outline-light font-weight-bold" @click="Register()">CADASTRAR</div>
+                                <div class="btn btn-outline-light font-weight-bold" 
+                                @click="Register(inputs)">CADASTRAR</div>
                             </div>
                         </div>
                     </div>
@@ -49,6 +50,12 @@
                     <div class="row" v-if="message === 'Cadastrado'">
                         <div class="col-12">
                             <h5 class="text-center">CADASTRADO COM SUCESSO</h5>
+                        </div>
+                    </div>
+
+                    <div class="row" v-else>
+                        <div class="col-12">
+                            <h5 class="text-center">{{message}}</h5>
                         </div>
                     </div>
 
@@ -78,18 +85,18 @@ export default {
             console.log(this.inputs)
         },
  
-          Register(context) {        
+          Register(inputs) {        
             let url = '/api/users/register';        
             
             axios
-                .post(url, this.inputs)
+                .post(url, inputs)
                 .then(response => {
                     this.message = response.data.message   
                     this.data = response.data.data
                     console.log(this.message)      
                 })
                 .catch(function (error) {
-                    console.log(response);
+                    console.log(error);
                 });
         },
     },

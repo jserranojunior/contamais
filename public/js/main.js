@@ -17646,6 +17646,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -17663,17 +17670,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         cadastrar: function cadastrar() {
             console.log(this.inputs);
         },
-        Register: function Register(context) {
+        Register: function Register(inputs) {
             var _this = this;
 
             var url = '/api/users/register';
 
-            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post(url, this.inputs).then(function (response) {
+            __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post(url, inputs).then(function (response) {
                 _this.message = response.data.message;
                 _this.data = response.data.data;
                 console.log(_this.message);
             }).catch(function (error) {
-                console.log(response);
+                console.log(error);
             });
         }
     },
@@ -18644,7 +18651,7 @@ var render = function() {
                           staticClass: "btn btn-outline-light font-weight-bold",
                           on: {
                             click: function($event) {
-                              _vm.Register()
+                              _vm.Register(_vm.inputs)
                             }
                           }
                         },
@@ -18656,7 +18663,13 @@ var render = function() {
                 _vm._v(" "),
                 _vm.message === "Cadastrado"
                   ? _c("div", { staticClass: "row" }, [_vm._m(1)])
-                  : _vm._e()
+                  : _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "col-12" }, [
+                        _c("h5", { staticClass: "text-center" }, [
+                          _vm._v(_vm._s(_vm.message))
+                        ])
+                      ])
+                    ])
               ])
             ]
           )
