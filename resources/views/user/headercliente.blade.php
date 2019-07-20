@@ -101,20 +101,21 @@
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!-- The user image in the navbar-->
-              <img src="{{URL('img')}}/{{auth()->user()->image}}" class="user-image" alt="User Image">
+              <!-- <img src="{{URL('img')}}/{{auth()->user()->image}}" class="user-image" alt="User Image"> -->
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
               <span class="hidden-xs">{{auth()->user()->name}}</span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
               <li class="user-header">
-                <img src="{{URL('img')}}/{{auth()->user()->image}}"  class="img-circle" alt="User Image">
+              <!-- {{auth()->user()->name}} -->
+                <!-- <img src="{{URL('img')}}/{{auth()->user()->image}}"  class="img-circle" alt="User Image"> -->
 
-                <p class="text-center">
-                {{auth()->user()->name}}
+                <!-- <p class="text-center">
+                
                   <small>Administrador</small>
                 </p>
-                
+                 -->
               </li>
               
               <!-- Menu Footer-->
@@ -143,12 +144,12 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="{{URL('img')}}/{{auth()->user()->image}}"  class="img-circle" alt="User Image">
+          <!-- <img src="{{URL('img')}}/{{auth()->user()->image}}"  class="img-circle" alt="User Image"> -->
         </div>
         <div class="pull-left info">
-          <p>{{auth()->user()->name}}</p>
+          <!-- <p>{{auth()->user()->name}}</p> -->
           <!-- Status -->
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <!-- <a href="#"><i class="fa fa-circle text-success"></i> Online</a> -->
         </div>
       </div>
 
@@ -160,51 +161,35 @@
         <!-- Optionally, you can add icons to the links -->
         <li class="active"><a href="{{URL('/cliente')}}"><i class="fa fa-home"></i> <span>INÍCIO</span></a></li>
 
-        <li class="treeview">
-            <a href="#">
-              <i class="fa  fa-bar-chart"></i>
-              <span>SMART INVEST</span> 
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>           
-            </a>
-            <ul class="treeview-menu">
-              
-          <li><a href="{{URL('saldo')}}"><i class="fa fa-university"></i> <span>SALDO</span></a></li>
-          <li><a href="{{URL('extrato')}}"><i class="fa fa-line-chart"></i> <span>EXTRATO</span></a></li>
-          <li><a href="{{URL('deposito')}}"><i class="fa fa-plus-square-o"></i> <span>DEPOSITO</span></a></li>
-          <li><a href="{{URL('resgate')}}"><i class="fa fa-life-ring"></i> <span>RESGATE</span></a></li>          
-            </ul>
-          </li>
 
-          <li class="treeview">
+          <!-- <li class="treeview">
               <a href="#">
-                  <i class="fa fa-money "></i> <span>SMARTCOIN</span>
+                  <i class="fa fa-money "></i> <span>CONTA SMART</span>
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                 </span>           
               </a>
               <ul class="treeview-menu">
-                
+                 -->
+            
+            <!-- <li><a href="{{URL('smart/deposito')}}"><i class="fa fa-plus-square-o"></i> <span>DEPOSITO</span></a></li> -->
+            <!-- <li><a href="{{URL('smart/resgate')}}"><i class="fa fa-life-ring"></i> <span>RESGATE</span></a></li>           -->
+            <!-- <li><a href="{{URL('smart/resgate')}}"><i class="fa fa-circle-o-notch "></i> <span>TRANSFÊRENCIAS <br> ENTRE CONTAS</span></a></li>           -->
+             
+              <!-- </ul>
+            </li> -->
+
             <li><a href="{{URL('smart/saldo')}}"><i class="fa fa-university"></i> <span>SALDO</span></a></li>
             <li><a href="{{URL('smart/extrato')}}"><i class="fa fa-line-chart"></i> <span>EXTRATO</span></a></li>
-            <li><a href="{{URL('smart/deposito')}}"><i class="fa fa-plus-square-o"></i> <span>DEPOSITO</span></a></li>
-            <li><a href="{{URL('smart/resgate')}}"><i class="fa fa-life-ring"></i> <span>RESGATE</span></a></li>          
-            <li><a href="{{URL('smart/resgate')}}"><i class="fa fa-circle-o-notch "></i> <span>TRANSFÊRENCIAS <br> ENTRE CONTAS</span></a></li>          
-             
-              </ul>
-            </li>
+        <!-- <li class=""><a target="_blank" href="https://app.conta.mobi/login"><i class="fa fa-university"></i> <span>MOBI VISA</span></a></li>   -->
 
-        
-        <li class=""><a target="_blank" href="https://app.conta.mobi/login"><i class="fa fa-university"></i> <span>MOBI VISA</span></a></li>  
+       <!-- <li class=""><a target="_blank" href="https://meu.brasilprepagos.com.br/bpp?_ga=2.8126130.1635589378.1529004737-698247966.1526345326&_gac=1.250867188.1529004835.CjwKCAjwpIjZBRBsEiwA0TN1r4qyFvjPFSbp5mifabKgf3FAKymNuLCq6aBGLX4fIUPiMsO9Z6P0qhoCOC"><i class="fa fa-bold"></i> <span>BPP VISA</span></a></li>   -->
 
-       <li class=""><a target="_blank" href="https://meu.brasilprepagos.com.br/bpp?_ga=2.8126130.1635589378.1529004737-698247966.1526345326&_gac=1.250867188.1529004835.CjwKCAjwpIjZBRBsEiwA0TN1r4qyFvjPFSbp5mifabKgf3FAKymNuLCq6aBGLX4fIUPiMsO9Z6P0qhoCOC"><i class="fa fa-bold"></i> <span>BPP VISA</span></a></li>  
-
-        <li class=""><a target="_blank" href="https://play.google.com/store/apps/details?id=br.com.brasilprepago"><i class="fa fa-arrow-circle-down"></i> <span>BPP APP</span></a></li>  
+        <!-- <li class=""><a target="_blank" href="https://play.google.com/store/apps/details?id=br.com.brasilprepago"><i class="fa fa-arrow-circle-down"></i> <span>BPP APP</span></a></li>   -->
 
 
-        <li class=""><a href="{{URL('transferencia')}}"><i class="fa fa-exchange">
-          </i><span>TRANSFÊRENCIA</span></a>
+        <!-- <li class=""><a href="{{URL('transferencia')}}"><i class="fa fa-exchange"> -->
+          <!-- </i><span>TRANSFÊRENCIA</span></a> -->
         </li>
 
         <li ><a class="link-whatsapp" href="whatsapp://send?phone=5511986752530"><i class="fa fa-comments">

@@ -39,7 +39,7 @@
                                 </button>                               
                             </div>
                         </div> 
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <div class="col-md-12">
                                 <a href="{{URL('/register')}}">
                                     <div class="btn btn-grey-primary full-width">
@@ -47,7 +47,7 @@
                                     </div>      
                                 </a>                         
                             </div>                            
-                        </div>
+                        </div> -->
 
                         <div class="form-group">
                             <div class="col-md-12">

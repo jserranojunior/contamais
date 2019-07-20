@@ -15,9 +15,9 @@
     <a class="text-white text-bold js-scroll-trigger" href="{{url('/login')}}">
       <h4>LOGIN<h4>
     </a>
-    <a class="text-white text-bold js-scroll-trigger" href="{{URL('/register')}}">
+    <!-- <a class="text-white text-bold js-scroll-trigger" href="{{URL('/register')}}">
       <h4>CADASTRO<h4>
-    </a>
+    </a> -->
   </div>
   <div class="row">
     <a href="#" src="{{URL('/img/google-play.png')}}" alt=""> </a>

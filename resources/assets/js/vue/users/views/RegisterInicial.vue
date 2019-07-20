@@ -40,7 +40,13 @@
                     </div>
                     <div class="form-group">
                         <div class="row">
-                            <div class="col-12 text-right">
+                            <div class="col-6 text-left">
+                                <a href="./login">
+                                <div class="btn btn-outline-light font-weight-bold">JÁ POSSUO CADASTRO</div>
+                                </a>
+                            </div>
+
+                            <div class="col-6 text-right">
                                 <div class="btn btn-outline-light font-weight-bold" 
                                 @click="Register(inputs)">CADASTRAR</div>
                             </div>

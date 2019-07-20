@@ -17653,6 +17653,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 
@@ -18645,7 +18651,9 @@ var render = function() {
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group" }, [
                   _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-12 text-right" }, [
+                    _vm._m(1),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-6 text-right" }, [
                       _c(
                         "div",
                         {
@@ -18663,7 +18671,7 @@ var render = function() {
                 ]),
                 _vm._v(" "),
                 _vm.message === "Cadastrado"
-                  ? _c("div", { staticClass: "row" }, [_vm._m(1)])
+                  ? _c("div", { staticClass: "row" }, [_vm._m(2)])
                   : _c("div", { staticClass: "row" }, [
                       _c("div", { staticClass: "col-12" }, [
                         _c("h5", { staticClass: "text-center" }, [
@@ -18697,6 +18705,18 @@ var staticRenderFns = [
           ])
         ]
       )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-6 text-left" }, [
+      _c("a", { attrs: { href: "./login" } }, [
+        _c("div", { staticClass: "btn btn-outline-light font-weight-bold" }, [
+          _vm._v("JÁ POSSUO CADASTRO")
+        ])
+      ])
     ])
   },
   function() {
