@@ -8,7 +8,7 @@
         <div class="col-lg-offset-2 col-lg-8">
         <div class="box">
             <div class="header-box">
-            <h2 class="center">EXTRATO SMARTCOIN</h2>
+            <h2 class="center">EXTRATO SMART</h2>
             </div>
             <div class="body-box">
             
@@ -16,7 +16,7 @@
             <thead>    
             <tr>
                     <td>DATA</td>
-                    <td class="text-right">SMARTCOIN</td>
+                    <td class="text-right">SMART</td>
                 </tr>
         </thead>
                             <tbody>
