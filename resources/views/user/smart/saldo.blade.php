@@ -17,7 +17,7 @@
             <table class="table  table-hover">
                     <tbody><tr>
                         <td class="text-left">
-                            SMARTCOIN
+                            SMART
                         </td>
                         <td class="text-right">
                           
