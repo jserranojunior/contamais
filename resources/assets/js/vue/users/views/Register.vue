@@ -8,7 +8,7 @@
                     <hr/>
                 </div>
             </div>
-    
+  
              <RegisterComponent></RegisterComponent>  
 
                 <hr class="hr-space"/>

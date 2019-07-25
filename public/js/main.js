@@ -17568,7 +17568,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\ninput.form-control.input-main-login {\n    margin-bottom: 10px;\n    border: aliceblue;\n    border-bottom: 1px solid white;\n    background-color: #f0f8ff00;\n    color: white;\n    border-radius: 0rem;\n}\n.form-control:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);\n}\n.form-control::-moz-placeholder {\n    color: white;\n}\n.form-control:-ms-input-placeholder {\n    color: white;\n}\n.form-control::-ms-input-placeholder {\n    color: white;\n}\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.bg-black-smart {\n    background-color: #252525;\n}\nbody {\n    background-color: #FF4C03\n}\n.text-smart {\n    color: #FF4C03\n}\n.img-logo {\n    margin-bottom: 20px;\n    margin-top: 30px;\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\ninput.form-control.input-main-login {\n    margin-bottom: 10px;\n    border: aliceblue;\n    border-bottom: 1px solid white;\n    background-color: #f0f8ff00;\n    color: white;\n    border-radius: 0rem;\n}\n.form-control:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);\n}\n.form-control::-webkit-input-placeholder {\n    color: white;\n    text-align: center;\n}\n.form-control:-moz-placeholder {\n    color: white;\n    text-align: center;\n}\n.form-control::-moz-placeholder {\n    color: white;\n    text-align: center;\n}\n.form-control:-ms-input-placeholder {\n    color: white;\n    text-align: center;\n}\n.form-control::-ms-input-placeholder {\n    color: white;\n    text-align: center;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* input.form-control.input-main-login {\n    margin-bottom: 10px;\n    border: aliceblue;\n    border-bottom: 1px solid white;\n    background-color: #f0f8ff00;\n    color: white;\n    border-radius: 0rem;\n}\n\n.form-control:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);\n}\n.form-control::-moz-placeholder, \n.form-control:-ms-input-placeholder, \n.form-control::-ms-input-placeholder,\n.form-control::-webkit-input-placeholder {\n    color: white;\n} */\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.bg-black-smart {\n    background-color: #252525;\n}\nbody {\n    background-color: #FF4C03\n}\n.text-smart {\n    color: #FF4C03\n}\n.img-logo {\n    margin-bottom: 20px;\n    margin-top: 30px;\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -17583,6 +17583,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_the_mask___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_the_mask__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
+//
 //
 //
 //
@@ -18560,93 +18561,87 @@ var render = function() {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group" }, [
-                  _c("div", { staticClass: "col-12" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.inputs.celular,
-                          expression: "inputs.celular"
-                        },
-                        {
-                          name: "mask",
-                          rawName: "v-mask",
-                          value: "(##) #####-####",
-                          expression: "'(##) #####-####'"
-                        }
-                      ],
-                      staticClass: "form-control input-main-login",
-                      attrs: { type: "text", placeholder: "TELEFONE" },
-                      domProps: { value: _vm.inputs.celular },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.inputs, "celular", $event.target.value)
-                        }
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.inputs.celular,
+                        expression: "inputs.celular"
+                      },
+                      {
+                        name: "mask",
+                        rawName: "v-mask",
+                        value: "(##) #####-####",
+                        expression: "'(##) #####-####'"
                       }
-                    })
-                  ])
+                    ],
+                    staticClass: "form-control input-main-login",
+                    attrs: { type: "text", placeholder: "TELEFONE" },
+                    domProps: { value: _vm.inputs.celular },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.inputs, "celular", $event.target.value)
+                      }
+                    }
+                  })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group" }, [
-                  _c("div", { staticClass: "col-12" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.inputs.cpf,
-                          expression: "inputs.cpf"
-                        },
-                        {
-                          name: "mask",
-                          rawName: "v-mask",
-                          value: "###.###.###-##",
-                          expression: "'###.###.###-##'"
-                        }
-                      ],
-                      staticClass: "form-control input-main-login",
-                      attrs: { type: "text", placeholder: "CPF" },
-                      domProps: { value: _vm.inputs.cpf },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.inputs, "cpf", $event.target.value)
-                        }
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.inputs.cpf,
+                        expression: "inputs.cpf"
+                      },
+                      {
+                        name: "mask",
+                        rawName: "v-mask",
+                        value: "###.###.###-##",
+                        expression: "'###.###.###-##'"
                       }
-                    })
-                  ])
+                    ],
+                    staticClass: "form-control input-main-login",
+                    attrs: { type: "text", placeholder: "CPF" },
+                    domProps: { value: _vm.inputs.cpf },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.inputs, "cpf", $event.target.value)
+                      }
+                    }
+                  })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group" }, [
-                  _c("div", { staticClass: "col-12" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.inputs.password,
-                          expression: "inputs.password"
-                        }
-                      ],
-                      staticClass: "form-control input-main-login",
-                      attrs: { type: "password", placeholder: "SENHA" },
-                      domProps: { value: _vm.inputs.password },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.inputs, "password", $event.target.value)
-                        }
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.inputs.password,
+                        expression: "inputs.password"
                       }
-                    })
-                  ])
+                    ],
+                    staticClass: "form-control input-main-login",
+                    attrs: { type: "password", placeholder: "SENHA" },
+                    domProps: { value: _vm.inputs.password },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.inputs, "password", $event.target.value)
+                      }
+                    }
+                  })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group" }, [
@@ -18714,7 +18709,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "col-6 text-left" }, [
       _c("a", { attrs: { href: "./login" } }, [
         _c("div", { staticClass: "btn btn-outline-light font-weight-bold" }, [
-          _vm._v("JÁ POSSUO CADASTRO")
+          _vm._v("FAZER LOGIN")
         ])
       ])
     ])
