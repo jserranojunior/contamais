@@ -18,12 +18,7 @@ class NewRegisterController extends Controller
   
         public function create(Request $data)
         {       
-            $data = $data->all();
-                    //  return response()->json([
-                    //     'message' => $data,  
-                    //     'data' => $data,              
-                    // ]);
-           
+            $data = $data->all();                       
             $messages = [
                 'email.required' => 'Email está vazio',
                 'cpf.required' => 'CPF está vazio',
@@ -37,37 +32,23 @@ class NewRegisterController extends Controller
                         'message' => $validate->errors(),  
                         'data' => '',              
                     ]);
-                }else{
-                    
-                        $data['password'] = Hash::make($data['password']);
-
-                  
-                    
+                }else{                    
+                        $data['password'] = Hash::make($data['password']);                 
                     try{
-                        $this->Users = $this->Users->create($data);
-                    
-                        $this->Users->save();   
-                   
-    
+                        $this->Users = $this->Users->create($data);                    
+                        $this->Users->save();                      
                         return response()->json([
                             'message' => 'Cadastrado',  
                             // 'message' => $data['password'], 
                             'data' => $data,             
-                        ]);
-                        
+                        ]);                        
                     }catch(\Exception $e){
                         return response()->json([
                             'message' =>  $e,  
                             'data' => '',              
                         ]); 
                     }
-                    
-            
-    
-                   
                 }    
-                
-                
         }
     
 }

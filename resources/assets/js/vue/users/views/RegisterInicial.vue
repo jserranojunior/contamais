@@ -49,7 +49,7 @@
 
                             <div class="col-6 text-right">
                                 <div class="btn btn-outline-light font-weight-bold" 
-                                @click="Register(inputs)">CADASTRAR</div>
+                                @click="Register(inputs)">CADASTRARO</div>
                             </div>
                         </div>
                     </div>
@@ -93,18 +93,24 @@ export default {
         },
  
           Register(inputs) {        
-            let url = '/api/users/register';        
+            //   console.log(inputs)
+            var pathname = window.location.pathname;
+            let url = pathname + 'api/users/register';
+            
+            console.log(url)
             
             axios
                 .post(url, inputs)
-                .then(response => {
+                .then(response => {                    
                     this.message = response.data.message   
                     this.data = response.data.data
                     console.log(this.message) 
                     this.inputs = ""     
                 })
                 .catch(function (error) {
+                 
                     console.log(error);
+
                 });
         },
     },
