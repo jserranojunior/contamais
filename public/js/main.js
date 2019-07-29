@@ -17568,7 +17568,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* input.form-control.input-main-login {\n    margin-bottom: 10px;\n    border: aliceblue;\n    border-bottom: 1px solid white;\n    background-color: #f0f8ff00;\n    color: white;\n    border-radius: 0rem;\n}\n\n.form-control:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);\n}\n.form-control::-moz-placeholder, \n.form-control:-ms-input-placeholder, \n.form-control::-ms-input-placeholder,\n.form-control::-webkit-input-placeholder {\n    color: white;\n} */\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.bg-black-smart {\n    background-color: #252525;\n}\nbody {\n    background-color: #FF4C03\n}\n.text-smart {\n    color: #FF4C03\n}\n.img-logo {\n    margin-bottom: 20px;\n    margin-top: 30px;\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* input.form-control.input-main-login {\n    margin-bottom: 10px;\n    border: aliceblue;\n    border-bottom: 1px solid white;\n    background-color: #f0f8ff00;\n    color: white;\n    border-radius: 0rem;\n}\n\n.form-control:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);\n}\n.form-control::-moz-placeholder, \n.form-control:-ms-input-placeholder, \n.form-control::-ms-input-placeholder,\n.form-control::-webkit-input-placeholder {\n    color: white;\n} */\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.bg-black-smart {\n    background-color: #252525;\n}\nbody {\n    background-color: #FF4C03\n}\n.text-smart {\n    color: #FF4C03\n}\n.img-logo {\n    margin-bottom: 20px;\n    margin-top: 30px;\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -17687,10 +17687,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             console.log(url);
 
             __WEBPACK_IMPORTED_MODULE_1_axios___default.a.post(url, inputs).then(function (response) {
-                _this.message = response.data.message;
+
                 _this.data = response.data.data;
                 console.log(_this.message);
-                _this.inputs = "";
+                _this.inputs = {};
+                _this.message = response.data.message;
             }).catch(function (error) {
 
                 console.log(error);

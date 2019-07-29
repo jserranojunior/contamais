@@ -102,10 +102,11 @@ export default {
             axios
                 .post(url, inputs)
                 .then(response => {                    
-                    this.message = response.data.message   
+                     
                     this.data = response.data.data
                     console.log(this.message) 
-                    this.inputs = ""     
+                    this.inputs = {};     
+                    this.message = response.data.message  
                 })
                 .catch(function (error) {
                  
