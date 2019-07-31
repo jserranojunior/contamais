@@ -18665,7 +18665,7 @@ var render = function() {
                             }
                           }
                         },
-                        [_vm._v("CADASTRARO")]
+                        [_vm._v("CADASTRAR")]
                       )
                     ])
                   ])

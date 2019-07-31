@@ -49,7 +49,7 @@
 
                             <div class="col-6 text-right">
                                 <div class="btn btn-outline-light font-weight-bold" 
-                                @click="Register(inputs)">CADASTRARO</div>
+                                @click="Register(inputs)">CADASTRAR</div>
                             </div>
                         </div>
                     </div>
