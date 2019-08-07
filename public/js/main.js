@@ -17568,7 +17568,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* input.form-control.input-main-login {\n    margin-bottom: 10px;\n    border: aliceblue;\n    border-bottom: 1px solid white;\n    background-color: #f0f8ff00;\n    color: white;\n    border-radius: 0rem;\n}\n\n.form-control:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);\n}\n.form-control::-moz-placeholder, \n.form-control:-ms-input-placeholder, \n.form-control::-ms-input-placeholder,\n.form-control::-webkit-input-placeholder {\n    color: white;\n} */\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.bg-black-smart {\n    background-color: #252525;\n}\nbody {\n    background-color: #FF4C03\n}\n.text-smart {\n    color: #FF4C03\n}\n.img-logo {\n    margin-bottom: 20px;\n    margin-top: 30px;\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* input.form-control.input-main-login {\n    margin-bottom: 10px;\n    border: aliceblue;\n    border-bottom: 1px solid white;\n    background-color: #f0f8ff00;\n    color: white;\n    border-radius: 0rem;\n}\n\n.form-control:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);\n}\n.form-control::-moz-placeholder, \n.form-control:-ms-input-placeholder, \n.form-control::-ms-input-placeholder,\n.form-control::-webkit-input-placeholder {\n    color: white;\n} */\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.bg-black-smart {\n    background-color: #252525;\n}\nbody {\n    background-color: #FF4C03\n}\n.text-smart {\n    color: #FF4C03\n}\n.img-logo {\n    margin-bottom: 20px;\n    margin-top: 30px;\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -17583,6 +17583,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_the_mask___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_the_mask__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -18682,7 +18694,9 @@ var render = function() {
                     ])
               ])
             ]
-          )
+          ),
+          _vm._v(" "),
+          _vm._m(3)
         ])
       ])
     ])
@@ -18727,6 +18741,30 @@ var staticRenderFns = [
     return _c("div", { staticClass: "col-12" }, [
       _c("h5", { staticClass: "text-center" }, [
         _vm._v("CADASTRADO COM SUCESSO")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-10 text-center" }, [
+        _c(
+          "a",
+          {
+            attrs: {
+              href:
+                "https://play.google.com/store/apps/details?id=com.alvitre.contasmartmais"
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "img-logo img-fluid",
+              attrs: { src: "img/disponivel-googleplay.png", alt: "" }
+            })
+          ]
+        )
       ])
     ])
   }
