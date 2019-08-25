@@ -19297,7 +19297,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.bg-smart{\n        background-color: #fe4101;\n}\n.user-painel {\n    margin: 17px;\n}\n", ""]);
+exports.push([module.i, "\n.tr-yellow{\n    background-color: #faffce;\n}\n.row-space, .col-space{\n    margin-top:7px;\n}\n.bg-smart{\n        background-color: #fe4101;\n}\n.text-title-smart{\n        margin-top:7px;\n        font-weight: bold;\n}\n.user-painel {\n    margin: 17px;\n}\n.text-smart{\n    color:#fe4101;\n}\n@media screen and (min-width: 767px){\n.float-right-md {\n        float:right\n}\n.float-left-md {\n        float:right\n}\n}\n@media screen and (max-width: 767px){\n.float-none-sm{\n        float:none !important;\n}\n.float-center-sm{\n        float:center !important;\n        text-align:center !important;\n}\n.float-center-sm img{ \n        float:center !important; \n        text-align:center !important;\n}\n}\n", ""]);
 
 // exports
 
@@ -19308,6 +19308,30 @@ exports.push([module.i, "\n.bg-smart{\n        background-color: #fe4101;\n}\n.u
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -19593,320 +19617,397 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("div", { staticClass: "container-" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row justify-content-center" }, [
-              _c("div", { staticClass: "col-12 col-md-12 col-lg-12" }, [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-12 " }, [
-                    _c("header", { staticClass: "bg-smart" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "col-8" }, [
-                          _c("img", {
-                            staticClass: "img-fluid float-center",
-                            attrs: { src: "img/contas/logo.jpg", alt: "" }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-4" }, [
-                          _c(
-                            "div",
-                            { staticClass: "float-right user-painel " },
-                            [
-                              _c("i", { staticClass: "fas fa-star" }),
-                              _vm._v(" "),
-                              _c("i", { staticClass: "fas fa-comments" }),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "text-white" }, [
-                                _vm._v(
-                                  "\n                                                        | David Lira "
-                                ),
-                                _c("i", { staticClass: "far fa-user" })
-                              ])
-                            ]
-                          )
-                        ])
-                      ])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "nav",
-                  {
-                    staticClass: "navbar navbar-expand-lg navbar-dark bg-dark"
-                  },
-                  [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row justify-content-center" }, [
+          _c("div", { staticClass: "col-12 col-md-12 col-lg-12" }, [
+            _c("div", { staticClass: "row bg-smart" }, [
+              _c("div", { staticClass: "col-12 " }, [
+                _c("header", { staticClass: "bg-smart" }, [
+                  _c("div", { staticClass: "row" }, [
                     _c(
-                      "button",
+                      "div",
                       {
-                        staticClass: "navbar-toggler",
-                        attrs: {
-                          type: "button",
-                          "data-toggle": "collapse",
-                          "data-target": "#navbarSupportedContent",
-                          "aria-controls": "navbarSupportedContent",
-                          "aria-expanded": "false",
-                          "aria-label": "Toggle navigation"
-                        }
+                        staticClass:
+                          "col-xs-12 col-sm-12 col-md-8 col-lg-8 float-center-sm"
                       },
-                      [_c("span", { staticClass: "navbar-toggler-icon" })]
+                      [
+                        _c("img", {
+                          staticClass: "img-fluid float-center float-center-sm",
+                          attrs: { src: "img/contas/logo.jpg", alt: "" }
+                        })
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
                       "div",
-                      {
-                        staticClass: "collapse navbar-collapse",
-                        attrs: { id: "navbarSupportedContent" }
-                      },
+                      { staticClass: "col-xs-12 col-sm-12 col-md-4 col-lg-4" },
                       [
-                        _c("ul", { staticClass: "navbar-nav mr-auto" }, [
-                          _c("li", { staticClass: "nav-item active" }, [
-                            _c(
-                              "a",
-                              { staticClass: "nav-link", attrs: { href: "#" } },
-                              [
-                                _vm._v("Início "),
-                                _c("span", { staticClass: "sr-only" }, [
-                                  _vm._v("(current)")
-                                ])
-                              ]
-                            )
-                          ]),
-                          _vm._v(" |\n                                    "),
-                          _c("li", { staticClass: "nav-item" }, [
-                            _c(
-                              "a",
-                              { staticClass: "nav-link", attrs: { href: "#" } },
-                              [_vm._v("Lançamentos")]
-                            )
-                          ]),
-                          _vm._v(" |\n                                    "),
-                          _c("li", { staticClass: "nav-item" }, [
-                            _c(
-                              "a",
-                              { staticClass: "nav-link", attrs: { href: "#" } },
-                              [_vm._v("Consultas")]
-                            )
-                          ]),
-                          _vm._v(" |\n                                    "),
-                          _c("li", { staticClass: "nav-item" }, [
-                            _c(
-                              "a",
-                              { staticClass: "nav-link", attrs: { href: "#" } },
-                              [_vm._v("Administração")]
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
                         _c(
-                          "form",
-                          { staticClass: "form-inline my-2 my-lg-0" },
+                          "div",
+                          {
+                            staticClass:
+                              "float-right float-center-sm user-painel "
+                          },
                           [
+                            _c("i", { staticClass: "fas fa-star" }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fas fa-comments" }),
+                            _vm._v(" "),
                             _c("span", { staticClass: "text-white" }, [
-                              _vm._v("Central de Ajuda")
+                              _vm._v(
+                                "\n                                                        | David Lira "
+                              ),
+                              _c("i", { staticClass: "far fa-user" })
                             ])
                           ]
                         )
                       ]
                     )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-12" }, [
-                    _c("div", { staticClass: "navbar" }, [
-                      _c("h5", { staticClass: "text-smart" }, [
-                        _vm._v(
-                          "\n                                        Receitas e Despesas\n                                "
-                        )
-                      ])
-                    ])
                   ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-5" }, [
-                    _c("div", { staticClass: "btn btn-primary btn-sm" }, [
-                      _vm._v("+ ADICIONAR")
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "btn-group", attrs: { role: "group" } },
-                      [
-                        _c(
-                          "button",
-                          {
-                            staticClass:
-                              "btn btn-sm btn-secondary dropdown-toggle",
-                            attrs: {
-                              id: "btnGroupDrop1",
-                              type: "button",
-                              "data-toggle": "dropdown",
-                              "aria-haspopup": "true",
-                              "aria-expanded": "false"
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\n                                        ORDERNAR POR\n                                        "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          {
-                            staticClass: "dropdown-menu",
-                            attrs: { "aria-labelledby": "btnGroupDrop1" }
-                          },
-                          [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "dropdown-item",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("#")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "a",
-                              {
-                                staticClass: "dropdown-item",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("#")]
-                            )
-                          ]
-                        )
-                      ]
-                    )
-                  ]),
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row bg-dark" }, [
+              _c(
+                "nav",
+                { staticClass: "navbar navbar-expand-lg navbar-dark bg-dark" },
+                [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "navbar-toggler",
+                      attrs: {
+                        type: "button",
+                        "data-toggle": "collapse",
+                        "data-target": "#navbarSupportedContent",
+                        "aria-controls": "navbarSupportedContent",
+                        "aria-expanded": "false",
+                        "aria-label": "Toggle navigation"
+                      }
+                    },
+                    [_c("span", { staticClass: "navbar-toggler-icon" })]
+                  ),
                   _vm._v(" "),
-                  _c("div", { staticClass: "col-6" }, [
-                    _c("div", { staticClass: "form-group " }, [
-                      _c("input", {
-                        staticClass: "form-control",
-                        attrs: { type: "text" }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-1" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "collapse navbar-collapse",
+                      attrs: { id: "navbarSupportedContent" }
+                    },
+                    [
+                      _c("ul", { staticClass: "navbar-nav mr-auto" }, [
+                        _c("li", { staticClass: "nav-item active" }, [
+                          _c(
+                            "a",
+                            { staticClass: "nav-link", attrs: { href: "#" } },
+                            [
+                              _vm._v("Início "),
+                              _c("span", { staticClass: "sr-only" }, [
+                                _vm._v("(current)")
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" |\n                                    "),
+                        _c("li", { staticClass: "nav-item" }, [
+                          _c(
+                            "a",
+                            { staticClass: "nav-link", attrs: { href: "#" } },
+                            [_vm._v("Lançamentos")]
+                          )
+                        ]),
+                        _vm._v(" |\n                                    "),
+                        _c("li", { staticClass: "nav-item" }, [
+                          _c(
+                            "a",
+                            { staticClass: "nav-link", attrs: { href: "#" } },
+                            [_vm._v("Consultas")]
+                          )
+                        ]),
+                        _vm._v(" |\n                                    "),
+                        _c("li", { staticClass: "nav-item" }, [
+                          _c(
+                            "a",
+                            { staticClass: "nav-link", attrs: { href: "#" } },
+                            [_vm._v("Administração")]
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("form", { staticClass: "form-inline my-2 my-lg-0" }, [
+                        _c("span", { staticClass: "text-white" }, [
+                          _vm._v("Central de Ajuda")
+                        ])
+                      ])
+                    ]
+                  )
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row bg-light" }, [
+              _c("div", { staticClass: "col-12  float-center-sm" }, [
+                _c(
+                  "nav",
+                  {
+                    staticClass:
+                      "navbar navbar-expand-lg navbar-light bg-light navbar-text"
+                  },
+                  [
                     _c(
-                      "div",
+                      "h5",
                       {
-                        staticClass: "btn-group  float-right",
-                        attrs: { role: "group" }
+                        staticClass:
+                          "text-smart text-title-smart float-center-sm"
                       },
                       [
-                        _c(
-                          "button",
-                          {
-                            staticClass:
-                              "btn btn-sm btn-secondary dropdown-toggle",
-                            attrs: {
-                              id: "btnGroupDrop1",
-                              type: "button",
-                              "data-toggle": "dropdown",
-                              "aria-haspopup": "true",
-                              "aria-expanded": "false"
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\n                                            FILTRAR\n                                        "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          {
-                            staticClass: "dropdown-menu",
-                            attrs: { "aria-labelledby": "btnGroupDrop1" }
-                          },
-                          [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "dropdown-item",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("#")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "a",
-                              {
-                                staticClass: "dropdown-item",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("#")]
-                            )
-                          ]
+                        _vm._v(
+                          "\n                                        Receitas e Despesas\n                                    "
                         )
                       ]
                     )
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row row-space" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "col-xs-12 col-sm-12 col-md-6 col-lg-6 float-center-sm"
+                },
+                [
+                  _c(
+                    "div",
+                    { staticClass: "btn btn-outline-danger btn-sm float-cent" },
+                    [_vm._v("+ ADICIONAR")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "btn-group", attrs: { role: "group" } },
+                    [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "btn btn-sm btn-outline-danger dropdown-toggle",
+                          attrs: {
+                            id: "btnGroupDrop1",
+                            type: "button",
+                            "data-toggle": "dropdown",
+                            "aria-haspopup": "true",
+                            "aria-expanded": "false"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                        ORDERNAR POR\n                                        "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "dropdown-menu",
+                          attrs: { "aria-labelledby": "btnGroupDrop1" }
+                        },
+                        [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { href: "#" }
+                            },
+                            [_vm._v("#")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "a",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { href: "#" }
+                            },
+                            [_vm._v("#")]
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "col-8 col-xs-8 col-sm-8 col-md-4 col-lg-5 col-space float-right-md float-none-sm"
+                },
+                [
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: { type: "text" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "col-4 col-xs-4 col-sm-4 col-md-2 col-lg-1 col-space"
+                },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "btn-group float-right",
+                      attrs: { role: "group" }
+                    },
+                    [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "btn btn-sm btn-outline-danger dropdown-toggle",
+                          attrs: {
+                            id: "btnGroupDrop1",
+                            type: "button",
+                            "data-toggle": "dropdown",
+                            "aria-haspopup": "true",
+                            "aria-expanded": "false"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                            FILTRAR\n                                        "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "dropdown-menu",
+                          attrs: { "aria-labelledby": "btnGroupDrop1" }
+                        },
+                        [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { href: "#" }
+                            },
+                            [_vm._v("#")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "a",
+                            {
+                              staticClass: "dropdown-item",
+                              attrs: { href: "#" }
+                            },
+                            [_vm._v("#")]
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-xs-12 col-sm-12 col-md-8 col-lg-8" },
+                [
+                  _c("div", { staticClass: "row row-space" }, [
+                    _c("div", { staticClass: "col-12" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-12" }, [
+                          _c("div", { staticClass: "btn text-smart" }, [
+                            _c("i", { staticClass: "fas fa-chevron-left" })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn btn-sm" }, [
+                            _vm._v("2019")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn  text-smart" }, [
+                            _c("i", { staticClass: "fas fa-chevron-right" })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn text-smart" }, [
+                            _c("i", { staticClass: "fas fa-chevron-left" })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn btn-sm" }, [
+                            _vm._v("JAN")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn btn-sm" }, [
+                            _vm._v("FEV")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn btn-sm" }, [
+                            _vm._v("MAR")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn btn-sm" }, [
+                            _vm._v("ABR")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn btn-sm" }, [
+                            _vm._v("MAI")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn btn-sm" }, [
+                            _vm._v("JUN")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn btn-sm" }, [
+                            _vm._v("JUL")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn btn-sm" }, [
+                            _vm._v("AGO")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn btn-sm" }, [
+                            _vm._v("SET")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn btn-sm" }, [
+                            _vm._v("OUT")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn btn-sm" }, [
+                            _vm._v("NOV")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn btn-sm" }, [
+                            _vm._v("DEZ")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "btn  text-smart" }, [
+                            _c("i", { staticClass: "fas fa-chevron-right" })
+                          ])
+                        ])
+                      ])
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "row" }, [
                     _c("div", { staticClass: "col-12" }, [
-                      _c("div", { staticClass: "btn" }, [_vm._v("< ")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "btn btn-sm" }, [
-                        _vm._v("2019")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "btn" }, [_vm._v("> ")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "btn" }, [_vm._v("< ")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "btn btn-sm" }, [_vm._v("JAN")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "btn btn-sm" }, [_vm._v("FEV")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "btn btn-sm" }, [_vm._v("MAR")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "btn btn-sm" }, [_vm._v("ABR")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "btn btn-sm" }, [_vm._v("MAI")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "btn btn-sm" }, [_vm._v("JUN")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "btn btn-sm" }, [_vm._v("JUL")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "btn btn-sm" }, [_vm._v("AGO")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "btn btn-sm" }, [_vm._v("SET")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "btn btn-sm" }, [_vm._v("OUT")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "btn btn-sm" }, [_vm._v("NOV")]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "btn btn-sm" }, [_vm._v("DEZ")]),
-                      _vm._v(" "),
-                      _c("input", { attrs: { type: "date" } }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "far fa-calendar-alt" }),
-                      _vm._v(" "),
-                      _c("input", { attrs: { type: "date" } }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "far fa-calendar-alt" })
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-8" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-12" }, [
-                        _c("div", { staticClass: "card" }, [
+                      _c("div", { staticClass: "card" }, [
+                        _c("div", { staticClass: "table-responsive" }, [
                           _c("table", { staticClass: "table" }, [
-                            _c("thead", {}, [
+                            _c("thead", [
                               _c("tr", [
                                 _c("th", [
                                   _c("input", { attrs: { type: "checkbox" } })
@@ -19923,8 +20024,8 @@ var staticRenderFns = [
                             ]),
                             _vm._v(" "),
                             _c("tbody", [
-                              _c("tr", [
-                                _c("td", { attrs: { colspan: "8" } }, [
+                              _c("tr", { staticClass: "tr-yellow" }, [
+                                _c("td", { attrs: { colspan: "7" } }, [
                                   _vm._v(" SALDO ANTERIOR")
                                 ])
                               ]),
@@ -19964,10 +20065,6 @@ var staticRenderFns = [
                                   _c("span", { staticClass: "text-danger" }, [
                                     _c("i", { staticClass: "fas fa-check" })
                                   ])
-                                ]),
-                                _vm._v(" "),
-                                _c("td", [
-                                  _c("input", { attrs: { type: "checkbox" } })
                                 ])
                               ]),
                               _vm._v(" "),
@@ -20006,15 +20103,11 @@ var staticRenderFns = [
                                   _c("span", { staticClass: "text-success" }, [
                                     _c("i", { staticClass: "fas fa-check" })
                                   ])
-                                ]),
-                                _vm._v(" "),
-                                _c("td", [
-                                  _c("input", { attrs: { type: "checkbox" } })
                                 ])
                               ]),
                               _vm._v(" "),
-                              _c("tr", [
-                                _c("td", { attrs: { colspan: "4" } }, [
+                              _c("tr", { staticClass: "tr-yellow" }, [
+                                _c("td", { attrs: { colspan: "3" } }, [
                                   _vm._v(" TOTAL DOS LANÇAMENTOS")
                                 ]),
                                 _vm._v(" "),
@@ -20022,7 +20115,7 @@ var staticRenderFns = [
                                   "td",
                                   {
                                     staticClass: "text-right",
-                                    attrs: { colspan: "3" }
+                                    attrs: { colspan: "4" }
                                   },
                                   [
                                     _c(
@@ -20031,13 +20124,13 @@ var staticRenderFns = [
                                       [_vm._v("190,00")]
                                     ),
                                     _vm._v(
-                                      " - \n                                                     "
+                                      " - \n                                                            "
                                     ),
                                     _c("span", { staticClass: "text-danger" }, [
                                       _vm._v("180,00")
                                     ]),
                                     _vm._v(
-                                      " = \n                                                     "
+                                      " = \n                                                            "
                                     ),
                                     _c(
                                       "span",
@@ -20051,146 +20144,180 @@ var staticRenderFns = [
                           ])
                         ])
                       ])
-                    ]),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col-12" }, [
-                        _c("div", { staticClass: "btn btn-success btn-sm" }, [
-                          _vm._v("PAGAR")
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "btn btn-danger btn-sm" }, [
-                          _vm._v("EXCLUIR")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-12" }, [
+                      _c(
+                        "div",
+                        { staticClass: "btn btn-outline-success btn-sm" },
+                        [
+                          _c("i", { staticClass: "fas fa-check" }),
+                          _vm._v(" PAGAR")
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "btn btn-outline-danger btn-sm" },
+                        [
+                          _c("i", { staticClass: "fas fa-times" }),
+                          _vm._v(" EXCLUIR")
+                        ]
+                      )
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col-xs-12 col-sm-12 col-md-4 col-lg-4" },
+                [
+                  _c("div", { staticClass: "row row-space" }, [
+                    _c("div", { staticClass: "col" }, [
+                      _c("div", { staticClass: "card" }, [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-6 float-center" }, [
+                            _c("input", { attrs: { type: "date" } }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "far fa-calendar-alt" })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-6 float-center" }, [
+                            _c("input", { attrs: { type: "date" } }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "far fa-calendar-alt" })
+                          ])
                         ])
                       ])
                     ])
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "col-4" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col" }, [
-                        _c("div", { staticClass: "card" }, [
-                          _c("div", { staticClass: "card-header" }, [
-                            _vm._v(
-                              "\n                                            FILTRO RÁPIDO\n                                        "
-                            )
-                          ]),
+                  _c("div", { staticClass: "row row-space" }, [
+                    _c("div", { staticClass: "col" }, [
+                      _c("div", { staticClass: "card" }, [
+                        _c("div", { staticClass: "card-header" }, [
+                          _vm._v(
+                            "\n                                            FILTRO RÁPIDO\n                                        "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "card-body" }, [
+                          _vm._v(
+                            "\n                                            Lançamentos "
+                          ),
+                          _c("br"),
                           _vm._v(" "),
-                          _c("div", { staticClass: "card-body" }, [
-                            _vm._v(
-                              "\n                                            Lançamentos "
-                            ),
-                            _c("br"),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "row" }, [
-                              _c("div", { staticClass: "col-6" }, [
-                                _c("input", { attrs: { type: "checkbox" } }),
-                                _vm._v(" Crédito"),
-                                _c("br"),
-                                _vm._v(" "),
-                                _c("input", { attrs: { type: "checkbox" } }),
-                                _vm._v(" Realizado"),
-                                _c("br"),
-                                _vm._v(" "),
-                                _c("input", { attrs: { type: "checkbox" } }),
-                                _vm._v(" Vendido"),
-                                _c("br")
-                              ]),
+                          _c("div", { staticClass: "row" }, [
+                            _c("div", { staticClass: "col-6" }, [
+                              _c("input", { attrs: { type: "checkbox" } }),
+                              _vm._v(" Crédito"),
+                              _c("br"),
                               _vm._v(" "),
-                              _c("div", { staticClass: "col-6" }, [
-                                _c("input", { attrs: { type: "checkbox" } }),
-                                _vm._v(" Débito"),
-                                _c("br"),
-                                _vm._v(" "),
-                                _c("input", { attrs: { type: "checkbox" } }),
-                                _vm._v(" Não Realizado"),
-                                _c("br"),
-                                _vm._v(" "),
-                                _c("input", { attrs: { type: "checkbox" } }),
-                                _vm._v(" A Vencer"),
-                                _c("br")
-                              ])
+                              _c("input", { attrs: { type: "checkbox" } }),
+                              _vm._v(" Realizado"),
+                              _c("br"),
+                              _vm._v(" "),
+                              _c("input", { attrs: { type: "checkbox" } }),
+                              _vm._v(" Vendido"),
+                              _c("br")
                             ]),
                             _vm._v(" "),
-                            _c(
-                              "div",
-                              { staticClass: "row content-justify-center" },
-                              [
-                                _c("div", { staticClass: "col-12" }, [
-                                  _c("div", { staticClass: "btn" }, [
-                                    _c("i", { staticClass: "fas fa-check" }),
-                                    _vm._v(" FILTRAR")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "btn" }, [
-                                    _c("i", { staticClass: "fas fa-times" }),
-                                    _vm._v(" LIMPAR")
-                                  ])
-                                ])
-                              ]
-                            )
-                          ])
-                        ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "col" }, [
-                        _c("div", { staticClass: "card" }, [
-                          _c("div", { staticClass: "card-header" }, [
-                            _vm._v(
-                              "\n                                            Saldos\n                                        "
-                            )
+                            _c("div", { staticClass: "col-6" }, [
+                              _c("input", { attrs: { type: "checkbox" } }),
+                              _vm._v(" Débito"),
+                              _c("br"),
+                              _vm._v(" "),
+                              _c("input", { attrs: { type: "checkbox" } }),
+                              _vm._v(" Não Realizado"),
+                              _c("br"),
+                              _vm._v(" "),
+                              _c("input", { attrs: { type: "checkbox" } }),
+                              _vm._v(" A Vencer"),
+                              _c("br")
+                            ])
                           ]),
                           _vm._v(" "),
-                          _c("div", { staticClass: "card-body" }, [
-                            _c("div", { staticClass: "row" }, [
-                              _c("table", { staticClass: "table" }, [
-                                _c("tr", [
-                                  _c("td", [
-                                    _vm._v("Saldo Anterior"),
-                                    _c("br"),
-                                    _vm._v(
-                                      "\n                                                            30/06/2019\n                                                        "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("0,00")])
+                          _c(
+                            "div",
+                            { staticClass: "row content-justify-center" },
+                            [
+                              _c("div", { staticClass: "col-12" }, [
+                                _c("div", { staticClass: "btn" }, [
+                                  _c("i", { staticClass: "fas fa-check" }),
+                                  _vm._v(" FILTRAR")
                                 ]),
                                 _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [
-                                    _vm._v("Saldo do Período "),
-                                    _c("br"),
-                                    _vm._v(
-                                      "\n                                                            01 a 31/07/2019\n                                                        "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v(" 10,00")])
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [
-                                    _vm._v("Saldo Acumulado"),
-                                    _c("br"),
-                                    _vm._v(
-                                      "\n                                                        30/06/2019\n                                                        "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("10,00")])
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", { staticClass: "text-danger" }, [
-                                  _c("td", [_vm._v("Saldo Atual")]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v("10,00")])
+                                _c("div", { staticClass: "btn" }, [
+                                  _c("i", { staticClass: "fas fa-times" }),
+                                  _vm._v(" LIMPAR")
                                 ])
+                              ])
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col" }, [
+                      _c("div", { staticClass: "card" }, [
+                        _c("div", { staticClass: "card-header" }, [
+                          _vm._v(
+                            "\n                                            Saldos\n                                        "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "card-body" }, [
+                          _c("div", { staticClass: "row" }, [
+                            _c("table", { staticClass: "table" }, [
+                              _c("tr", [
+                                _c("td", [
+                                  _vm._v("Saldo Anterior"),
+                                  _c("br"),
+                                  _vm._v(
+                                    "\n                                                            30/06/2019\n                                                        "
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("0,00")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [
+                                  _vm._v("Saldo do Período "),
+                                  _c("br"),
+                                  _vm._v(
+                                    "\n                                                            01 a 31/07/2019\n                                                        "
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v(" 10,00")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [
+                                  _vm._v("Saldo Acumulado"),
+                                  _c("br"),
+                                  _vm._v(
+                                    "\n                                                        30/06/2019\n                                                        "
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("10,00")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", { staticClass: "text-danger" }, [
+                                _c("td", [_vm._v("Saldo Atual")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("10,00")])
                               ])
                             ])
                           ])
@@ -20198,8 +20325,8 @@ var staticRenderFns = [
                       ])
                     ])
                   ])
-                ])
-              ])
+                ]
+              )
             ])
           ])
         ])
