@@ -20181,17 +20181,31 @@ var staticRenderFns = [
                     _c("div", { staticClass: "col" }, [
                       _c("div", { staticClass: "card" }, [
                         _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "col-6 float-center" }, [
-                            _c("input", { attrs: { type: "date" } }),
-                            _vm._v(" "),
-                            _c("i", { staticClass: "far fa-calendar-alt" })
-                          ]),
+                          _c(
+                            "div",
+                            { staticClass: "col-6 float-center text-smart" },
+                            [
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: { type: "date" }
+                              }),
+                              _vm._v(" "),
+                              _c("i", { staticClass: "far fa-calendar-alt" })
+                            ]
+                          ),
                           _vm._v(" "),
-                          _c("div", { staticClass: "col-6 float-center" }, [
-                            _c("input", { attrs: { type: "date" } }),
-                            _vm._v(" "),
-                            _c("i", { staticClass: "far fa-calendar-alt" })
-                          ])
+                          _c(
+                            "div",
+                            { staticClass: "col-6 float-center text-smart" },
+                            [
+                              _c("input", {
+                                staticClass: "form-control",
+                                attrs: { type: "date" }
+                              }),
+                              _vm._v(" "),
+                              _c("i", { staticClass: "far fa-calendar-alt" })
+                            ]
+                          )
                         ])
                       ])
                     ])
@@ -20201,15 +20215,18 @@ var staticRenderFns = [
                     _c("div", { staticClass: "col" }, [
                       _c("div", { staticClass: "card" }, [
                         _c("div", { staticClass: "card-header" }, [
-                          _vm._v(
-                            "\n                                            FILTRO RÁPIDO\n                                        "
-                          )
+                          _c("i", { staticClass: "fas fa-cog  text-smart" }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "font-weight-bold" }, [
+                            _vm._v("Filtros Rápidos ")
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("div", { staticClass: "card-body" }, [
-                          _vm._v(
-                            "\n                                            Lançamentos "
-                          ),
+                          _c("h6", { staticClass: "text-smart" }, [
+                            _vm._v("Lançamentos")
+                          ]),
+                          _vm._v(" "),
                           _c("br"),
                           _vm._v(" "),
                           _c("div", { staticClass: "row" }, [
@@ -20244,18 +20261,34 @@ var staticRenderFns = [
                           _vm._v(" "),
                           _c(
                             "div",
-                            { staticClass: "row content-justify-center" },
+                            {
+                              staticClass:
+                                "row row-space content-justify-center"
+                            },
                             [
                               _c("div", { staticClass: "col-12" }, [
-                                _c("div", { staticClass: "btn" }, [
-                                  _c("i", { staticClass: "fas fa-check" }),
-                                  _vm._v(" FILTRAR")
-                                ]),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "btn btn-outline-success btn-sm"
+                                  },
+                                  [
+                                    _c("i", { staticClass: "fas fa-check" }),
+                                    _vm._v(" FILTRAR")
+                                  ]
+                                ),
                                 _vm._v(" "),
-                                _c("div", { staticClass: "btn" }, [
-                                  _c("i", { staticClass: "fas fa-times" }),
-                                  _vm._v(" LIMPAR")
-                                ])
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "btn btn-outline-danger btn-sm"
+                                  },
+                                  [
+                                    _c("i", { staticClass: "fas fa-times" }),
+                                    _vm._v(" LIMPAR")
+                                  ]
+                                )
                               ])
                             ]
                           )
@@ -20270,9 +20303,11 @@ var staticRenderFns = [
                     _c("div", { staticClass: "col" }, [
                       _c("div", { staticClass: "card" }, [
                         _c("div", { staticClass: "card-header" }, [
-                          _vm._v(
-                            "\n                                            Saldos\n                                        "
-                          )
+                          _c("i", { staticClass: "fas fa-cog  text-smart" }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "font-weight-bold" }, [
+                            _vm._v("Saldos")
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("div", { staticClass: "card-body" }, [
@@ -20280,44 +20315,64 @@ var staticRenderFns = [
                             _c("table", { staticClass: "table" }, [
                               _c("tr", [
                                 _c("td", [
-                                  _vm._v("Saldo Anterior"),
+                                  _c(
+                                    "span",
+                                    { staticClass: "font-weight-bold" },
+                                    [_vm._v("Saldo Anterior")]
+                                  ),
                                   _c("br"),
                                   _vm._v(
                                     "\n                                                            30/06/2019\n                                                        "
                                   )
                                 ]),
                                 _vm._v(" "),
-                                _c("td", [_vm._v("0,00")])
+                                _c("td", { staticClass: "text-smart" }, [
+                                  _vm._v("0,00")
+                                ])
                               ]),
                               _vm._v(" "),
                               _c("tr", [
                                 _c("td", [
-                                  _vm._v("Saldo do Período "),
+                                  _c(
+                                    "span",
+                                    { staticClass: "font-weight-bold" },
+                                    [_vm._v(" Saldo do Período ")]
+                                  ),
                                   _c("br"),
                                   _vm._v(
                                     "\n                                                            01 a 31/07/2019\n                                                        "
                                   )
                                 ]),
                                 _vm._v(" "),
-                                _c("td", [_vm._v(" 10,00")])
+                                _c("td", { staticClass: "text-smart" }, [
+                                  _vm._v(" 10,00")
+                                ])
                               ]),
                               _vm._v(" "),
                               _c("tr", [
                                 _c("td", [
-                                  _vm._v("Saldo Acumulado"),
+                                  _c(
+                                    "span",
+                                    { staticClass: "font-weight-bold" },
+                                    [_vm._v(" Saldo Acumulado ")]
+                                  ),
                                   _c("br"),
                                   _vm._v(
                                     "\n                                                        30/06/2019\n                                                        "
                                   )
                                 ]),
                                 _vm._v(" "),
-                                _c("td", [_vm._v("10,00")])
+                                _c("td", { staticClass: "text-smart" }, [
+                                  _vm._v("10,00")
+                                ])
                               ]),
                               _vm._v(" "),
                               _c("tr", { staticClass: "text-danger" }, [
                                 _c("td", [_vm._v("Saldo Atual")]),
                                 _vm._v(" "),
-                                _c("td", [_vm._v("10,00")])
+                                _c("td", { staticClass: "text-smart" }, [
+                                  _vm._v("10,00")
+                                ])
                               ])
                             ])
                           ])

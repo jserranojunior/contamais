@@ -196,11 +196,11 @@
                                                     <div class="card">
                                                        
                                                             <div class="row">
-                                                                <div class="col-6 float-center">
-                                                        <input type="date" class=""> <i class="far fa-calendar-alt"></i>                                                
+                                                                <div class="col-6 float-center text-smart">
+                                                        <input type="date" class="form-control"> <i class="far fa-calendar-alt"></i>                                                
                                                     </div>
-                                                    <div class="col-6 float-center">
-                                                        <input type="date" class="">   <i class="far fa-calendar-alt"></i>
+                                                    <div class="col-6 float-center text-smart">
+                                                        <input type="date" class="form-control">   <i class="far fa-calendar-alt"></i>
                                                     </div>
                                                             </div>
                                                         
@@ -212,11 +212,11 @@
                                             <div class="col">
                                                 <div class="card">
                                             <div class="card-header">
-                                                FILTRO RÁPIDO
+                                                <i class="fas fa-cog  text-smart"></i>  <span class="font-weight-bold">Filtros Rápidos </span>
                                             </div>
                                             <div class="card-body">
-                                                Lançamentos <br>
-                                                <div class="row">
+                                                <h6 class="text-smart">Lançamentos</h6> <br>
+                                                <div class="row">                                                    
                                                     <div class="col-6">
                                                     <input type="checkbox"> Crédito<br>
                                                      <input type="checkbox"> Realizado<br>
@@ -228,10 +228,10 @@
                                                        <input type="checkbox"> A Vencer<br>
                                                 </div>
                                                 </div>
-                                                <div class="row content-justify-center">
+                                                <div class="row row-space content-justify-center">
                                                     <div class="col-12">
-                                                        <div class="btn"><i class="fas fa-check"></i> FILTRAR</div>
-                                                        <div class="btn"><i class="fas fa-times"></i> LIMPAR</div>
+                                                        <div class="btn btn-outline-success btn-sm"><i class="fas fa-check"></i> FILTRAR</div>
+                                                        <div class="btn btn-outline-danger btn-sm"><i class="fas fa-times"></i> LIMPAR</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -243,32 +243,32 @@
                                             <div class="col">
                                                 <div class="card">
                                             <div class="card-header">
-                                                Saldos
+                                                <i class="fas fa-cog  text-smart"></i> <span class="font-weight-bold">Saldos</span> 
                                             </div>
                                             <div class="card-body">                                               
                                                 <div class="row">
                                                     <table class="table">
                                                         <tr>
-                                                            <td>Saldo Anterior<br>
+                                                            <td><span  class="font-weight-bold">Saldo Anterior</span><br>
                                                                 30/06/2019
                                                             </td>
-                                                            <td>0,00</td>
+                                                            <td class="text-smart">0,00</td>
                                                         </tr>                                                            
                                                         <tr>
-                                                            <td>Saldo do Período <br>
+                                                            <td><span  class="font-weight-bold"> Saldo do Período </span><br>
                                                                 01 a 31/07/2019
                                                             </td>
-                                                               <td> 10,00</td>
+                                                               <td class="text-smart"> 10,00</td>
                                                         </tr>  
                                                         <tr>
-                                                            <td>Saldo Acumulado<br>
+                                                            <td><span  class="font-weight-bold"> Saldo Acumulado </span><br>
                                                             30/06/2019
                                                             </td>
-                                                            <td>10,00</td>
+                                                            <td class="text-smart">10,00</td>
                                                         </tr>   
                                                         <tr class="text-danger">
                                                             <td>Saldo Atual</td>
-                                                            <td>10,00</td>
+                                                            <td class="text-smart">10,00</td>
                                                         </tr>
                                                     </table>                                             
                                                 </div>                                               
