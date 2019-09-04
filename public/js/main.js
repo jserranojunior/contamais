@@ -20185,10 +20185,7 @@ var staticRenderFns = [
                             "div",
                             { staticClass: "col-6 float-center text-smart" },
                             [
-                              _c("input", {
-                                staticClass: "form-control",
-                                attrs: { type: "date" }
-                              }),
+                              _c("input", { attrs: { type: "date" } }),
                               _vm._v(" "),
                               _c("i", { staticClass: "far fa-calendar-alt" })
                             ]
@@ -20198,10 +20195,7 @@ var staticRenderFns = [
                             "div",
                             { staticClass: "col-6 float-center text-smart" },
                             [
-                              _c("input", {
-                                staticClass: "form-control",
-                                attrs: { type: "date" }
-                              }),
+                              _c("input", { attrs: { type: "date" } }),
                               _vm._v(" "),
                               _c("i", { staticClass: "far fa-calendar-alt" })
                             ]

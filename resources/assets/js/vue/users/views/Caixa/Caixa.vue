@@ -197,10 +197,10 @@
                                                        
                                                             <div class="row">
                                                                 <div class="col-6 float-center text-smart">
-                                                        <input type="date" class="form-control"> <i class="far fa-calendar-alt"></i>                                                
+                                                        <input type="date"> <i class="far fa-calendar-alt"></i>                                                
                                                     </div>
                                                     <div class="col-6 float-center text-smart">
-                                                        <input type="date" class="form-control">   <i class="far fa-calendar-alt"></i>
+                                                        <input type="date">   <i class="far fa-calendar-alt"></i>
                                                     </div>
                                                             </div>
                                                         
